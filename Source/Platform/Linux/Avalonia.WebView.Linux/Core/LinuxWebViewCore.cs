@@ -1,10 +1,16 @@
-﻿using Linux.WebView.Core;
+using Linux.WebView.Core;
 
 namespace Avalonia.WebView.Linux.Core;
 
 public partial class LinuxWebViewCore : IPlatformWebView<LinuxWebViewCore>
 {
-    public LinuxWebViewCore(ILinuxApplication linuxApplication, ViewHandler handler, IVirtualWebViewControlCallBack callback, IVirtualBlazorWebViewProvider? provider, WebViewCreationProperties webViewCreationProperties)
+    public LinuxWebViewCore(
+        ILinuxApplication linuxApplication,
+        ViewHandler handler,
+        IVirtualWebViewControlCallBack callback,
+        IVirtualBlazorWebViewProvider? provider,
+        WebViewCreationProperties webViewCreationProperties
+    )
     {
         _application = linuxApplication;
         _provider = provider;
@@ -53,8 +59,6 @@ public partial class LinuxWebViewCore : IPlatformWebView<LinuxWebViewCore>
 
     WebScheme? _webScheme;
 
-    bool _isBlazorWebView = false;
-
     bool _isInitialized = false;
     public bool IsInitialized
     {
@@ -70,5 +74,4 @@ public partial class LinuxWebViewCore : IPlatformWebView<LinuxWebViewCore>
     }
 
     public WebKitWebView WebView => _webView;
-
 }

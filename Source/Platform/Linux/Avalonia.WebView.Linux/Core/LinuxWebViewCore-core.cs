@@ -1,10 +1,13 @@
-﻿using Linux.WebView.Core;
+using Linux.WebView.Core;
 
 namespace Avalonia.WebView.Linux.Core;
 
 unsafe partial class LinuxWebViewCore
 {
-    Task PrepareBlazorWebViewStarting(IVirtualBlazorWebViewProvider? provider, WebKitWebView webView)
+    Task PrepareBlazorWebViewStarting(
+        IVirtualBlazorWebViewProvider? provider,
+        WebKitWebView webView
+    )
     {
         if (provider is null || WebView is null)
             return Task.CompletedTask;
@@ -13,23 +16,28 @@ unsafe partial class LinuxWebViewCore
             return Task.CompletedTask;
 
         _webScheme = filter;
-        var bRet = _dispatcher.InvokeAsync(() =>
-        {
-            //webView.Context.RegisterUriScheme("app", WebView_WebResourceRequest);
-            webView.Context.RegisterUriScheme(filter.Scheme, WebView_WebResourceRequest);
+        var bRet = _dispatcher
+            .InvokeAsync(() =>
+            {
+                //webView.Context.RegisterUriScheme("app", WebView_WebResourceRequest);
+                webView.Context.RegisterUriScheme(filter.Scheme, WebView_WebResourceRequest);
 
-            var userContentManager = webView.UserContentManager;
+                var userContentManager = webView.UserContentManager;
 
-            var script = GtkApi.CreateUserScriptX(BlazorScriptHelper.BlazorStartingScript);
-            GtkApi.AddScriptForUserContentManager(userContentManager.Handle, script);
-            GtkApi.ReleaseScript(script);
+                var script = GtkApi.CreateUserScriptX(BlazorScriptHelper.BlazorStartingScript);
+                GtkApi.AddScriptForUserContentManager(userContentManager.Handle, script);
+                GtkApi.ReleaseScript(script);
 
-            GtkApi.AddSignalConnect(userContentManager.Handle, $"script-message-received::{_messageKeyWord}", LinuxApplicationManager.LoadFunction(_userContentMessageReceived), IntPtr.Zero);
-            GtkApi.RegisterScriptMessageHandler(userContentManager.Handle, _messageKeyWord);
+                GtkApi.AddSignalConnect(
+                    userContentManager.Handle,
+                    $"script-message-received::{_messageKeyWord}",
+                    LinuxApplicationManager.LoadFunction(_userContentMessageReceived),
+                    IntPtr.Zero
+                );
+                GtkApi.RegisterScriptMessageHandler(userContentManager.Handle, _messageKeyWord);
+            })
+            .Result;
 
-        }).Result;
-
-        _isBlazorWebView = true;
         return Task.CompletedTask;
     }
 
@@ -38,13 +46,12 @@ unsafe partial class LinuxWebViewCore
         if (webView is null)
             return;
 
-        var bRet = _dispatcher.InvokeAsync(() =>
-        {
-            //webView.UserContentManager.UnregisterScriptMessageHandler(_messageKeyWord);
-            //webView.RemoveSignalHandler($"script-message-received::{_messageKeyWord}", WebView_WebMessageReceived);
-        }).Result;
-
-        _isBlazorWebView = false;
+        var bRet = _dispatcher
+            .InvokeAsync(() => {
+                //webView.UserContentManager.UnregisterScriptMessageHandler(_messageKeyWord);
+                //webView.RemoveSignalHandler($"script-message-received::{_messageKeyWord}", WebView_WebMessageReceived);
+            })
+            .Result;
     }
 
     void WebView_WebMessageReceived(nint pContentManager, nint pJsResult, nint pArg)
@@ -89,7 +96,11 @@ unsafe partial class LinuxWebViewCore
             AllowFallbackOnHostPage = allowFallbackOnHostPage,
         };
 
-        var bRet = _provider.PlatformWebViewResourceRequested(this, requestWrapper, out var response);
+        var bRet = _provider.PlatformWebViewResourceRequested(
+            this,
+            requestWrapper,
+            out var response
+        );
         if (!bRet)
             return;
 
@@ -104,5 +115,4 @@ unsafe partial class LinuxWebViewCore
         using var inputStream = new GLib.InputStream(pBuffer);
         request.Finish(inputStream, ms.Length, headerString);
     }
-
 }

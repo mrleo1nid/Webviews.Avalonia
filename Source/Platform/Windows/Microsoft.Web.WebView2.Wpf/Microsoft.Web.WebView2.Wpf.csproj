@@ -1,15 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<TargetFramework>net7.0-windows</TargetFramework>
-		<Nullable>annotations</Nullable>
-		<UseWPF>true</UseWPF>
-		<DefineConstants>$(DefineConstants);WEBVIEW2_WPF</DefineConstants>
-
-	</PropertyGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Microsoft.Web.WebView2.Core\Microsoft.Web.WebView2.Core.csproj" />
-	</ItemGroup>
-
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows;net10.0-windows</TargetFrameworks>
+    <Nullable>annotations</Nullable>
+    <UseWPF>true</UseWPF>
+    <DefineConstants>$(DefineConstants);WEBVIEW2_WPF</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Web.WebView2.Core\Microsoft.Web.WebView2.Core.csproj" />
+  </ItemGroup>
 </Project>

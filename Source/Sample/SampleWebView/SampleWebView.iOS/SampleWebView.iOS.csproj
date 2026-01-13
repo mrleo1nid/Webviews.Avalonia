@@ -1,16 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0-ios</TargetFramework>
+    <TargetFrameworks>net8.0-ios;net10.0-ios</TargetFrameworks>
     <SupportedOSPlatformVersion>10.0</SupportedOSPlatformVersion>
-    <ProvisioningType>manual</ProvisioningType> 
+    <ProvisioningType>manual</ProvisioningType>
     <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
-    
     <!-- These properties need to be set in order to run on a real iDevice -->
     <!--<RuntimeIdentifier>ios-arm64</RuntimeIdentifier>-->
     <!--<CodesignKey></CodesignKey>-->
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <CreatePackage>false</CreatePackage>
   </PropertyGroup>
@@ -20,7 +18,6 @@
   <ItemGroup>
     <PackageReference Include="Avalonia.iOS" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\SampleWebView\SampleWebView.csproj" />
     <ProjectReference Include="..\..\..\Platform\iOS\Avalonia.WebView.iOS\Avalonia.WebView.iOS.csproj" />

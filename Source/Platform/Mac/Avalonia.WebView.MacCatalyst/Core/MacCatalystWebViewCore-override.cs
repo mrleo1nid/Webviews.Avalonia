@@ -1,4 +1,5 @@
-﻿using System.Text.Encodings.Web;
+using System.Text.Encodings.Web;
+
 namespace Avalonia.WebView.MacCatalyst.Core;
 
 partial class MacCatalystWebViewCore
@@ -37,13 +38,16 @@ partial class MacCatalystWebViewCore
 
         string? resultString = default;
         var messageJSStringLiteral = JavaScriptEncoder.Default.Encode(javaScript);
-        WebView.EvaluateJavaScript(javascript: $"{_dispatchMessageCallback}(\"{messageJSStringLiteral}\")",
-                                   completionHandler: (NSObject result, NSError error) =>
-                                   {
-                                       resultString = result.ToString();
-                                   });
+        WebView.EvaluateJavaScript(
+            javascript: $"{_dispatchMessageCallback}(\"{messageJSStringLiteral}\")",
+            completionHandler: (NSObject? result, NSError? error) =>
+            {
+                resultString = result?.ToString() ?? string.Empty;
+            }
+        );
 
-        return Task.FromResult(resultString); ;
+        return Task.FromResult(resultString);
+        ;
     }
 
     bool IWebViewControl.GoBack()
@@ -98,11 +102,10 @@ partial class MacCatalystWebViewCore
             return false;
 
         var messageJSStringLiteral = JavaScriptEncoder.Default.Encode(webMessageAsJson);
-        WebView.EvaluateJavaScript(javascript: $"{_dispatchMessageCallback}(\"{messageJSStringLiteral}\")",
-                                   completionHandler: (NSObject result, NSError error) =>
-                                   {
-
-                                   });
+        WebView.EvaluateJavaScript(
+            javascript: $"{_dispatchMessageCallback}(\"{messageJSStringLiteral}\")",
+            completionHandler: (NSObject? result, NSError? error) => { }
+        );
         return true;
     }
 
@@ -112,11 +115,10 @@ partial class MacCatalystWebViewCore
             return false;
 
         var messageJSStringLiteral = JavaScriptEncoder.Default.Encode(webMessageAsString);
-        WebView.EvaluateJavaScript(javascript: $"{_dispatchMessageCallback}(\"{messageJSStringLiteral}\")",
-                                   completionHandler: (NSObject result, NSError error) =>
-                                   {
-
-                                   });
+        WebView.EvaluateJavaScript(
+            javascript: $"{_dispatchMessageCallback}(\"{messageJSStringLiteral}\")",
+            completionHandler: (NSObject? result, NSError? error) => { }
+        );
         return true;
     }
 
@@ -142,10 +144,7 @@ partial class MacCatalystWebViewCore
     {
         if (!IsDisposed)
         {
-            if (disposing)
-            {
-
-            }
+            if (disposing) { }
 
             ClearBlazorWebViewCompleted();
             UnregisterEvents();

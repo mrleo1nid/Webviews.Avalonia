@@ -1,19 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\..\Linux\Avalonia.WebView.Linux\Avalonia.WebView.Linux.csproj" Condition="'$(IsLinux)'=='true'" />
-		<!--<ProjectReference Include="..\..\Mac\Avalonia.WebView.Mac\Avalonia.WebView.Mac.csproj" Condition="'$(IsOSX)'=='true'" />-->
-		<ProjectReference Include="..\..\Mac\Avalonia.WebView.MacCatalyst\Avalonia.WebView.MacCatalyst.csproj" Condition="'$(IsOSX)'=='true'" />
-		<ProjectReference Include="..\..\Windows\Avalonia.WebView.Windows\Avalonia.WebView.Windows.csproj" Condition="'$(IsWindows)'=='true'" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Include="$(BuildToolsDirectory)Directory.build.operation.common.props" Pack="True" PackagePath="build\$(MSBuildProjectName)%(Extension)" />
-		<None Include="$(BuildToolsDirectory)Directory.webview.desktop.common.targets" Pack="True" PackagePath="build\$(MSBuildProjectName)%(Extension)" />
-	</ItemGroup>
-
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0;net8.0-windows;net10.0-windows;net10.0-maccatalyst</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference
+      Include="..\..\Linux\Avalonia.WebView.Linux\Avalonia.WebView.Linux.csproj"
+      Condition="'$(TargetFramework)' == 'net8.0' Or '$(TargetFramework)' == 'net10.0'"
+    />
+    <!--<ProjectReference Include="..\..\Mac\Avalonia.WebView.Mac\Avalonia.WebView.Mac.csproj" Condition="'$(IsOSX)'=='true'" />-->
+    <ProjectReference
+      Include="..\..\Mac\Avalonia.WebView.MacCatalyst\Avalonia.WebView.MacCatalyst.csproj"
+      Condition="'$(TargetFramework)' == 'net10.0-maccatalyst'"
+    />
+    <ProjectReference
+      Include="..\..\Windows\Avalonia.WebView.Windows\Avalonia.WebView.Windows.csproj"
+      Condition="'$(TargetFramework)' == 'net8.0-windows' Or '$(TargetFramework)' == 'net10.0-windows'"
+    />
+  </ItemGroup>
+  <ItemGroup>
+    <None
+      Include="$(BuildToolsDirectory)Directory.build.operation.common.props"
+      Pack="True"
+      PackagePath="build\$(MSBuildProjectName)%(Extension)"
+    />
+    <None
+      Include="$(BuildToolsDirectory)Directory.webview.desktop.common.targets"
+      Pack="True"
+      PackagePath="build\$(MSBuildProjectName)%(Extension)"
+    />
+  </ItemGroup>
 </Project>

@@ -1,7 +1,15 @@
-﻿namespace Avalonia.WebView.MacCatalyst.Handlers;
+using Foundation;
+using WebKit;
+
+namespace Avalonia.WebView.MacCatalyst.Handlers;
+
 internal class SchemeHandler : NSObject, IWKUrlSchemeHandler
 {
-    public SchemeHandler(MacCatalystWebViewCore webViewCore, IVirtualBlazorWebViewProvider provider, WebScheme webScheme)
+    public SchemeHandler(
+        MacCatalystWebViewCore webViewCore,
+        IVirtualBlazorWebViewProvider provider,
+        WebScheme webScheme
+    )
     {
         _Scheme = webScheme;
         _webViewCore = webViewCore;
@@ -15,16 +23,31 @@ internal class SchemeHandler : NSObject, IWKUrlSchemeHandler
     //[Export("webView:startURLSchemeTask:")]
     public void StartUrlSchemeTask(WKWebView webView, IWKUrlSchemeTask urlSchemeTask)
     {
-        var responseBytes = GetResponseBytes(urlSchemeTask.Request.Url?.AbsoluteString ?? "", out var contentType, statusCode: out var statusCode);
+        var responseBytes = GetResponseBytes(
+            urlSchemeTask.Request.Url?.AbsoluteString ?? "",
+            out var contentType,
+            statusCode: out var statusCode
+        );
         if (statusCode == 200)
         {
             using var dic = new NSMutableDictionary<NSString, NSString>();
-            dic.Add((NSString)"Content-Length", (NSString)(responseBytes.Length.ToString(CultureInfo.InvariantCulture)));
+            dic.Add(
+                (NSString)"Content-Length",
+                (NSString)(responseBytes.Length.ToString(CultureInfo.InvariantCulture))
+            );
             dic.Add((NSString)"Content-Type", (NSString)contentType);
-            dic.Add((NSString)"Cache-Control", (NSString)"no-cache, max-age=0, must-revalidate, no-store");
+            dic.Add(
+                (NSString)"Cache-Control",
+                (NSString)"no-cache, max-age=0, must-revalidate, no-store"
+            );
             if (urlSchemeTask.Request.Url != null)
             {
-                using var response = new NSHttpUrlResponse(urlSchemeTask.Request.Url, statusCode, "HTTP/1.1", dic);
+                using var response = new NSHttpUrlResponse(
+                    urlSchemeTask.Request.Url,
+                    statusCode,
+                    "HTTP/1.1",
+                    dic
+                );
                 urlSchemeTask.DidReceiveResponse(response);
             }
 
@@ -39,10 +62,14 @@ internal class SchemeHandler : NSObject, IWKUrlSchemeHandler
         var webRequest = new WebResourceRequest
         {
             RequestUri = url!,
-            AllowFallbackOnHostPage = allowFallbackOnHostPage
+            AllowFallbackOnHostPage = allowFallbackOnHostPage,
         };
 
-        var bRet = _provider.PlatformWebViewResourceRequested(_webViewCore, webRequest, out var webResponse);
+        var bRet = _provider.PlatformWebViewResourceRequested(
+            _webViewCore,
+            webRequest,
+            out var webResponse
+        );
         if (!bRet || webResponse is null)
         {
             statusCode = 404;
@@ -62,7 +89,5 @@ internal class SchemeHandler : NSObject, IWKUrlSchemeHandler
     }
 
     //[Export("webView:stopURLSchemeTask:")]
-    public void StopUrlSchemeTask(WKWebView webView, IWKUrlSchemeTask urlSchemeTask)
-    {
-    }
+    public void StopUrlSchemeTask(WKWebView webView, IWKUrlSchemeTask urlSchemeTask) { }
 }

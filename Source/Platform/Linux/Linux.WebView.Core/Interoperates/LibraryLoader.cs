@@ -1,4 +1,4 @@
-﻿namespace Linux.WebView.Core.Interoperates;
+namespace Linux.WebView.Core.Interoperates;
 
 internal class LibraryLoader
 {
@@ -13,7 +13,8 @@ internal class LibraryLoader
 
     public static IntPtr LoadLibrary(string path) => dlopen(path, RTLD_GLOBAL | RTLD_LAZY);
 
-    public static IntPtr GetProcAddress(IntPtr hModule, string procName) => dlsym(hModule, procName);
+    public static IntPtr GetProcAddress(IntPtr hModule, string procName) =>
+        dlsym(hModule, procName);
 
     public static T? LoadDelegate<T>(IntPtr procaddress)
     {
@@ -24,10 +25,12 @@ internal class LibraryLoader
     }
 
     public static IntPtr LoadFunction<T>(T @delegate)
+        where T : notnull
     {
         if (@delegate is null)
             return IntPtr.Zero;
 
-       return Marshal.GetFunctionPointerForDelegate<T>(@delegate);
+        return Marshal.GetFunctionPointerForDelegate<T>(@delegate);
     }
 }
+

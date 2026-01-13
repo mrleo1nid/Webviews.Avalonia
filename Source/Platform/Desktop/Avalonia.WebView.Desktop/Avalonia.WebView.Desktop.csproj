@@ -1,6 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net10.0;net8.0-windows;net10.0-windows;net10.0-maccatalyst</TargetFrameworks>
   </PropertyGroup>
   <Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
   <PropertyGroup>
@@ -23,9 +23,18 @@
     <PackageReference Include="Avalonia" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Linux\Avalonia.WebView.Linux\Avalonia.WebView.Linux.csproj" />
-    <ProjectReference Include="..\..\Mac\Avalonia.WebView.MacCatalyst\Avalonia.WebView.MacCatalyst.csproj" />
-    <ProjectReference Include="..\..\Windows\Avalonia.WebView.Windows\Avalonia.WebView.Windows.csproj" />
+    <ProjectReference
+      Include="..\..\Linux\Avalonia.WebView.Linux\Avalonia.WebView.Linux.csproj"
+      Condition="'$(TargetFramework)' == 'net8.0' Or '$(TargetFramework)' == 'net10.0'"
+    />
+    <ProjectReference
+      Include="..\..\Mac\Avalonia.WebView.MacCatalyst\Avalonia.WebView.MacCatalyst.csproj"
+      Condition="'$(TargetFramework)' == 'net10.0-maccatalyst'"
+    />
+    <ProjectReference
+      Include="..\..\Windows\Avalonia.WebView.Windows\Avalonia.WebView.Windows.csproj"
+      Condition="'$(TargetFramework)' == 'net8.0-windows' Or '$(TargetFramework)' == 'net10.0-windows'"
+    />
   </ItemGroup>
   <ItemGroup>
     <None

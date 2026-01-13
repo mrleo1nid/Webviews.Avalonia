@@ -1,4 +1,6 @@
-﻿namespace Avalonia.WebView.MacCatalyst;
+using AppKit;
+
+namespace Avalonia.WebView.MacCatalyst;
 
 internal class ViewHandlerProvider : IViewHandlerProvider
 {
@@ -7,7 +9,12 @@ internal class ViewHandlerProvider : IViewHandlerProvider
         NSApplication.Init();
     }
 
-    IViewHandler IViewHandlerProvider.CreatePlatformWebViewHandler(IVirtualWebView virtualView, IVirtualWebViewControlCallBack virtualViewCallBack, IVirtualBlazorWebViewProvider? provider, Action<WebViewCreationProperties>? configDelegate)
+    IViewHandler IViewHandlerProvider.CreatePlatformWebViewHandler(
+        IVirtualWebView virtualView,
+        IVirtualWebViewControlCallBack virtualViewCallBack,
+        IVirtualBlazorWebViewProvider? provider,
+        Action<WebViewCreationProperties>? configDelegate
+    )
     {
         var creatonProperty = new WebViewCreationProperties();
         configDelegate?.Invoke(creatonProperty);
@@ -15,3 +22,4 @@ internal class ViewHandlerProvider : IViewHandlerProvider
         return new WebViewHandler(virtualView, virtualViewCallBack, provider, creatonProperty);
     }
 }
+

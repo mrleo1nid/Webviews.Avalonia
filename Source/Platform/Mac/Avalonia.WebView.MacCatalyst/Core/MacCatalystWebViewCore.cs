@@ -1,10 +1,18 @@
-﻿using Avalonia.WebView.MacCatalyst.Handlers;
+using Avalonia.WebView.MacCatalyst.Handlers;
 using Avalonia.WebView.MacCatalyst.Helpers;
+using Foundation;
+using WebKit;
 
 namespace Avalonia.WebView.MacCatalyst.Core;
+
 public partial class MacCatalystWebViewCore : IPlatformWebView<MacCatalystWebViewCore>
 {
-    public MacCatalystWebViewCore(ViewHandler handler, IVirtualWebViewControlCallBack callback, IVirtualBlazorWebViewProvider? provider, WebViewCreationProperties webViewCreationProperties)
+    public MacCatalystWebViewCore(
+        ViewHandler handler,
+        IVirtualWebViewControlCallBack callback,
+        IVirtualBlazorWebViewProvider? provider,
+        WebViewCreationProperties webViewCreationProperties
+    )
     {
         _provider = provider;
         _callBack = callback;
@@ -13,7 +21,10 @@ public partial class MacCatalystWebViewCore : IPlatformWebView<MacCatalystWebVie
 
         _callBack.PlatformWebViewCreating(this, new WebViewCreatingEventArgs());
         _config = new WKWebViewConfiguration();
-        _config.Preferences.SetValueForKey(NSObject.FromObject(_creationProperties.AreDevToolEnabled), new NSString("developerExtrasEnabled"));
+        _config.Preferences.SetValueForKey(
+            NSObject.FromObject(_creationProperties.AreDevToolEnabled),
+            new NSString("developerExtrasEnabled")
+        );
 
         _config.Preferences.JavaScriptEnabled = true;
         _config.MediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypes.None;
@@ -24,25 +35,38 @@ public partial class MacCatalystWebViewCore : IPlatformWebView<MacCatalystWebVie
             if (provider.ResourceRequestedFilterProvider(this, out var filter))
             {
                 _filter = filter;
-                _config.UserContentController.AddScriptMessageHandler(new WebViewScriptMessageHandler(filter.BaseUri, MessageReceived), _filterKeyWord);
-                _config.UserContentController.AddUserScript(new WKUserScript(new NSString(BlazorScriptHelper.BlazorStartingScript), WKUserScriptInjectionTime.AtDocumentEnd, true));
-                _config.SetUrlSchemeHandler(new SchemeHandler(this, provider, filter), urlScheme: filter.Scheme);
+                _config.UserContentController.AddScriptMessageHandler(
+                    new WebViewScriptMessageHandler(filter.BaseUri, MessageReceived),
+                    _filterKeyWord
+                );
+                _config.UserContentController.AddUserScript(
+                    new WKUserScript(
+                        new NSString(BlazorScriptHelper.BlazorStartingScript),
+                        WKUserScriptInjectionTime.AtDocumentEnd,
+                        true
+                    )
+                );
+                _config.SetUrlSchemeHandler(
+                    new SchemeHandler(this, provider, filter),
+                    urlScheme: filter.Scheme
+                );
             }
 
             _isBlazorWebView = true;
         }
         else
-            _config.UserContentController.AddScriptMessageHandler(new WebViewScriptMessageHandler(default!, MessageReceived), _filterKeyWord);
+            _config.UserContentController.AddScriptMessageHandler(
+                new WebViewScriptMessageHandler(default!, MessageReceived),
+                _filterKeyWord
+            );
 
         _webView = new WKWebView(CGRect.Empty, _config)
         {
-            AutoresizesSubviews = true,
             TranslatesAutoresizingMaskIntoConstraints = false,
         };
 
         NativeHandler = _webView.Handle;
         RegisterEvents();
-
     }
 
     ~MacCatalystWebViewCore()
@@ -75,7 +99,6 @@ public partial class MacCatalystWebViewCore : IPlatformWebView<MacCatalystWebVie
         get => Volatile.Read(ref _isdisposed);
         private set => Volatile.Write(ref _isdisposed, value);
     }
-
 
     public WKWebView WebView
     {

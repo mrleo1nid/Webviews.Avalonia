@@ -1,9 +1,16 @@
-﻿using DryIoc;
+using DryIoc;
+using Foundation;
+using WebKit;
 
 namespace Avalonia.WebView.MacCatalyst.Delegates;
+
 internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
 {
-    public WebViewNavigationDelegate(MacCatalystWebViewCore webViewCore, IVirtualWebViewControlCallBack callBack, WebScheme? webScheme)
+    public WebViewNavigationDelegate(
+        MacCatalystWebViewCore webViewCore,
+        IVirtualWebViewControlCallBack callBack,
+        WebScheme? webScheme
+    )
     {
         _webViewCore = webViewCore;
         //_webView = _webViewCore.WebView;
@@ -12,7 +19,9 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         if (webScheme is null)
             _isBlazor = false;
     }
+
     readonly MacCatalystWebViewCore _webViewCore;
+
     //readonly WKWebView _webView;
     readonly WebScheme? _webScheme;
     readonly IVirtualWebViewControlCallBack _callBack;
@@ -21,24 +30,24 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
     WKNavigation? _navigation;
     Uri? _currentUri;
 
-    public  void DidStartProvisionalNavigation(WKWebView webView, WKNavigation navigation)
+    public void DidStartProvisionalNavigation(WKWebView webView, WKNavigation navigation)
     {
         //base.DidStartProvisionalNavigation(webView, navigation);
         _navigation = navigation;
     }
 
-    public  void DecidePolicy(WKWebView webView, WKNavigationAction navigationAction, Action<WKNavigationActionPolicy> decisionHandler)
+    public void DecidePolicy(
+        WKWebView webView,
+        WKNavigationAction navigationAction,
+        Action<WKNavigationActionPolicy> decisionHandler
+    )
     {
         //var action = Trampolines.NIDActionArity1V93.Create(Marshal.GetFunctionPointerForDelegate(decisionHandler));
 
         var requestUrl = navigationAction.Request.Url;
         var uri = new Uri(requestUrl.ToString());
 
-        WebViewUrlLoadingEventArg args = new()
-        {
-            Url = uri,
-            RawArgs = navigationAction
-        };
+        WebViewUrlLoadingEventArg args = new() { Url = uri, RawArgs = navigationAction };
 
         _callBack.PlatformWebViewNavigationStarting(_webViewCore, args);
         if (args.Cancel)
@@ -51,7 +60,9 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         else
         {
             if (_webScheme is not null)
-                strategy = _webScheme.BaseUri.IsBaseOf(uri) ? UrlRequestStrategy.OpenInWebView : UrlRequestStrategy.OpenExternally;
+                strategy = _webScheme.BaseUri.IsBaseOf(uri)
+                    ? UrlRequestStrategy.OpenInWebView
+                    : UrlRequestStrategy.OpenExternally;
             else
                 strategy = UrlRequestStrategy.OpenInWebView;
         }
@@ -59,7 +70,7 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         var newWindowEventArgs = new WebViewNewWindowEventArgs()
         {
             Url = uri,
-            UrlLoadingStrategy = strategy
+            UrlLoadingStrategy = strategy,
         };
 
         if (!_callBack.PlatformWebViewNewWindowRequest(_webViewCore, newWindowEventArgs))
@@ -69,7 +80,10 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         }
         strategy = newWindowEventArgs.UrlLoadingStrategy;
 
-        if (strategy == UrlRequestStrategy.OpenExternally || strategy == UrlRequestStrategy.OpenInNewWindow)
+        if (
+            strategy == UrlRequestStrategy.OpenExternally
+            || strategy == UrlRequestStrategy.OpenInNewWindow
+        )
             OpenUriHelper.OpenInProcess(uri);
 
         if (strategy != UrlRequestStrategy.OpenInWebView)
@@ -84,7 +98,10 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         decisionHandler(WKNavigationActionPolicy.Allow);
     }
 
-    public  void DidReceiveServerRedirectForProvisionalNavigation(WKWebView webView, WKNavigation navigation)
+    public void DidReceiveServerRedirectForProvisionalNavigation(
+        WKWebView webView,
+        WKNavigation navigation
+    )
     {
         if (_currentUri?.Host == _webScheme?.AppAddress)
         {
@@ -102,21 +119,25 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         //base.DidReceiveServerRedirectForProvisionalNavigation(webView, navigation);
     }
 
-    public  void DidFailNavigation(WKWebView webView, WKNavigation navigation, NSError error)
+    public void DidFailNavigation(WKWebView webView, WKNavigation navigation, NSError error)
     {
         _currentUri = null;
         _navigation = null;
         //base.DidFailNavigation(webView, navigation, error);
     }
 
-    public  void DidFailProvisionalNavigation(WKWebView webView, WKNavigation navigation, NSError error)
+    public void DidFailProvisionalNavigation(
+        WKWebView webView,
+        WKNavigation navigation,
+        NSError error
+    )
     {
         _currentUri = null;
         _navigation = null;
         //base.DidFailProvisionalNavigation(webView, navigation, error);
     }
 
-    public  void DidCommitNavigation(WKWebView webView, WKNavigation navigation)
+    public void DidCommitNavigation(WKWebView webView, WKNavigation navigation)
     {
         if (_currentUri != null && _navigation == navigation)
         {
@@ -126,7 +147,7 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
         //base.DidCommitNavigation(webView, navigation);
     }
 
-    public  void DidFinishNavigation(WKWebView webView, WKNavigation navigation)
+    public void DidFinishNavigation(WKWebView webView, WKNavigation navigation)
     {
         bool isSucceed = false;
         if (_currentUri != null && _navigation == navigation)
@@ -138,7 +159,10 @@ internal class WebViewNavigationDelegate : NSObject, IWKNavigationDelegate
             isSucceed = true;
         }
 
-        _callBack.PlatformWebViewNavigationCompleted(_webViewCore, new WebViewUrlLoadedEventArg() { IsSuccess = isSucceed, RawArgs = navigation });
+        _callBack.PlatformWebViewNavigationCompleted(
+            _webViewCore,
+            new WebViewUrlLoadedEventArg() { IsSuccess = isSucceed, RawArgs = navigation }
+        );
 
         //base.DidFinishNavigation(webView, navigation);
     }

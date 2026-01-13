@@ -1,4 +1,4 @@
-﻿#region Assembly Microsoft.Web.WebView2.Core, Version=1.0.1829.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e
+#region Assembly Microsoft.Web.WebView2.Core, Version=1.0.1829.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e
 // C:\Users\ChisterWu\.nuget\packages\microsoft.web.webview2\1.0.1829-prerelease\lib\netcoreapp3.0\Microsoft.Web.WebView2.Core.dll
 // Decompiled with ICSharpCode.Decompiler 7.1.0.6543
 #endregion
@@ -6,6 +6,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 using Microsoft.Web.WebView2.Core.Raw;
 
 namespace Microsoft.Web.WebView2.Core
@@ -32,6 +33,7 @@ namespace Microsoft.Web.WebView2.Core
     //     and adheres to [CSP](https://developer.mozilla.org/docs/Web/HTTP/CSP). The app
     //     needs to set the appropriate access headers in its Microsoft.Web.WebView2.Core.CoreWebView2.WebResourceRequested
     //     event handler to allow CORS requests.
+    [SupportedOSPlatform("windows")]
     public class CoreWebView2CustomSchemeRegistration
     {
         private class RawCustomSchemeRegistration : ICoreWebView2CustomSchemeRegistration
@@ -44,8 +46,12 @@ namespace Microsoft.Web.WebView2.Core
 
             private List<string> AllowedOrigins { get; } = new List<string>();
 
-
-            public RawCustomSchemeRegistration(string schemeName, bool treatAsSecure, bool hasAuthorityComponent, List<string> allowedOrigins)
+            public RawCustomSchemeRegistration(
+                string schemeName,
+                bool treatAsSecure,
+                bool hasAuthorityComponent,
+                List<string> allowedOrigins
+            )
             {
                 SchemeName = schemeName;
                 TreatAsSecure = (treatAsSecure ? 1 : 0);
@@ -58,10 +64,15 @@ namespace Microsoft.Web.WebView2.Core
                 allowedOriginsCount = (uint)AllowedOrigins.Count;
                 if (allowedOriginsCount != 0)
                 {
-                    IntPtr intPtr = Marshal.AllocCoTaskMem((int)allowedOriginsCount * Marshal.SizeOf<IntPtr>());
+                    IntPtr intPtr = Marshal.AllocCoTaskMem(
+                        (int)allowedOriginsCount * Marshal.SizeOf<IntPtr>()
+                    );
                     for (int i = 0; i < allowedOriginsCount; i++)
                     {
-                        Marshal.WriteIntPtr(intPtr + i * Marshal.SizeOf<IntPtr>(), Marshal.StringToCoTaskMemAuto(AllowedOrigins[i]));
+                        Marshal.WriteIntPtr(
+                            intPtr + i * Marshal.SizeOf<IntPtr>(),
+                            Marshal.StringToCoTaskMemAuto(AllowedOrigins[i])
+                        );
                     }
 
                     Marshal.WriteIntPtr(allowedOriginsPtr, intPtr);
@@ -142,7 +153,6 @@ namespace Microsoft.Web.WebView2.Core
         //     Yes
         public List<string> AllowedOrigins { get; set; } = new List<string>();
 
-
         //
         // Summary:
         //     Initializes a new instance of the CoreWebView2CustomSchemeRegistration class.
@@ -157,7 +167,20 @@ namespace Microsoft.Web.WebView2.Core
 
         internal IntPtr GetNative()
         {
-            return Marshal.GetComInterfaceForObject(new RawCustomSchemeRegistration(SchemeName, TreatAsSecure, HasAuthorityComponent, AllowedOrigins), typeof(ICoreWebView2CustomSchemeRegistration));
+            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                throw new PlatformNotSupportedException("This API is only supported on Windows.");
+            }
+
+            return Marshal.GetComInterfaceForObject(
+                new RawCustomSchemeRegistration(
+                    SchemeName,
+                    TreatAsSecure,
+                    HasAuthorityComponent,
+                    AllowedOrigins
+                ),
+                typeof(ICoreWebView2CustomSchemeRegistration)
+            );
         }
     }
 }

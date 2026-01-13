@@ -1,4 +1,4 @@
-﻿#region Assembly Microsoft.Web.WebView2.Core, Version=1.0.1829.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e
+#region Assembly Microsoft.Web.WebView2.Core, Version=1.0.1829.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e
 // C:\Users\ChisterWu\.nuget\packages\microsoft.web.webview2\1.0.1829-prerelease\lib\netcoreapp3.0\Microsoft.Web.WebView2.Core.dll
 // Decompiled with ICSharpCode.Decompiler 7.1.0.6543
 #endregion
@@ -230,16 +230,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Value;
             }
-            set
-            {
-                _nativeICoreWebView2Value = value;
-            }
+            set { _nativeICoreWebView2Value = value; }
         }
 
         internal ICoreWebView2_2 _nativeICoreWebView2_2
@@ -254,16 +254,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_2.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_2.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_2Value;
             }
-            set
-            {
-                _nativeICoreWebView2_2Value = value;
-            }
+            set { _nativeICoreWebView2_2Value = value; }
         }
 
         internal ICoreWebView2_3 _nativeICoreWebView2_3
@@ -278,16 +278,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_3.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_3.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_3Value;
             }
-            set
-            {
-                _nativeICoreWebView2_3Value = value;
-            }
+            set { _nativeICoreWebView2_3Value = value; }
         }
 
         internal ICoreWebView2_4 _nativeICoreWebView2_4
@@ -302,16 +302,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_4.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_4.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_4Value;
             }
-            set
-            {
-                _nativeICoreWebView2_4Value = value;
-            }
+            set { _nativeICoreWebView2_4Value = value; }
         }
 
         internal ICoreWebView2_5 _nativeICoreWebView2_5
@@ -326,16 +326,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_5.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_5.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_5Value;
             }
-            set
-            {
-                _nativeICoreWebView2_5Value = value;
-            }
+            set { _nativeICoreWebView2_5Value = value; }
         }
 
         internal ICoreWebView2_6 _nativeICoreWebView2_6
@@ -350,16 +350,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_6.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_6.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_6Value;
             }
-            set
-            {
-                _nativeICoreWebView2_6Value = value;
-            }
+            set { _nativeICoreWebView2_6Value = value; }
         }
 
         internal ICoreWebView2_7 _nativeICoreWebView2_7
@@ -374,16 +374,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_7.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_7.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_7Value;
             }
-            set
-            {
-                _nativeICoreWebView2_7Value = value;
-            }
+            set { _nativeICoreWebView2_7Value = value; }
         }
 
         internal ICoreWebView2_8 _nativeICoreWebView2_8
@@ -398,16 +398,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_8.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_8.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_8Value;
             }
-            set
-            {
-                _nativeICoreWebView2_8Value = value;
-            }
+            set { _nativeICoreWebView2_8Value = value; }
         }
 
         internal ICoreWebView2_9 _nativeICoreWebView2_9
@@ -422,16 +422,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_9.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_9.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_9Value;
             }
-            set
-            {
-                _nativeICoreWebView2_9Value = value;
-            }
+            set { _nativeICoreWebView2_9Value = value; }
         }
 
         internal ICoreWebView2_10 _nativeICoreWebView2_10
@@ -446,16 +446,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_10.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_10.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_10Value;
             }
-            set
-            {
-                _nativeICoreWebView2_10Value = value;
-            }
+            set { _nativeICoreWebView2_10Value = value; }
         }
 
         internal ICoreWebView2_11 _nativeICoreWebView2_11
@@ -470,16 +470,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_11.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_11.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_11Value;
             }
-            set
-            {
-                _nativeICoreWebView2_11Value = value;
-            }
+            set { _nativeICoreWebView2_11Value = value; }
         }
 
         internal ICoreWebView2_12 _nativeICoreWebView2_12
@@ -494,16 +494,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_12.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_12.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_12Value;
             }
-            set
-            {
-                _nativeICoreWebView2_12Value = value;
-            }
+            set { _nativeICoreWebView2_12Value = value; }
         }
 
         internal ICoreWebView2_13 _nativeICoreWebView2_13
@@ -518,16 +518,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_13.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_13.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_13Value;
             }
-            set
-            {
-                _nativeICoreWebView2_13Value = value;
-            }
+            set { _nativeICoreWebView2_13Value = value; }
         }
 
         internal ICoreWebView2_14 _nativeICoreWebView2_14
@@ -542,16 +542,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_14.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_14.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_14Value;
             }
-            set
-            {
-                _nativeICoreWebView2_14Value = value;
-            }
+            set { _nativeICoreWebView2_14Value = value; }
         }
 
         internal ICoreWebView2_15 _nativeICoreWebView2_15
@@ -566,16 +566,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_15.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_15.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_15Value;
             }
-            set
-            {
-                _nativeICoreWebView2_15Value = value;
-            }
+            set { _nativeICoreWebView2_15Value = value; }
         }
 
         internal ICoreWebView2_16 _nativeICoreWebView2_16
@@ -590,16 +590,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_16.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_16.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_16Value;
             }
-            set
-            {
-                _nativeICoreWebView2_16Value = value;
-            }
+            set { _nativeICoreWebView2_16Value = value; }
         }
 
         internal ICoreWebView2_17 _nativeICoreWebView2_17
@@ -614,16 +614,16 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_17.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2_17.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2_17Value;
             }
-            set
-            {
-                _nativeICoreWebView2_17Value = value;
-            }
+            set { _nativeICoreWebView2_17Value = value; }
         }
 
         internal ICoreWebView2Experimental9 _nativeICoreWebView2Experimental9
@@ -634,20 +634,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental9Value = (ICoreWebView2Experimental9)_rawNative;
+                        _nativeICoreWebView2Experimental9Value =
+                            (ICoreWebView2Experimental9)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental9.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental9.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental9Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental9Value = value;
-            }
+            set { _nativeICoreWebView2Experimental9Value = value; }
         }
 
         internal ICoreWebView2Experimental8 _nativeICoreWebView2Experimental8
@@ -658,20 +659,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental8Value = (ICoreWebView2Experimental8)_rawNative;
+                        _nativeICoreWebView2Experimental8Value =
+                            (ICoreWebView2Experimental8)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental8.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental8.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental8Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental8Value = value;
-            }
+            set { _nativeICoreWebView2Experimental8Value = value; }
         }
 
         internal ICoreWebView2Experimental7 _nativeICoreWebView2Experimental7
@@ -682,20 +684,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental7Value = (ICoreWebView2Experimental7)_rawNative;
+                        _nativeICoreWebView2Experimental7Value =
+                            (ICoreWebView2Experimental7)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental7.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental7.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental7Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental7Value = value;
-            }
+            set { _nativeICoreWebView2Experimental7Value = value; }
         }
 
         internal ICoreWebView2Experimental6 _nativeICoreWebView2Experimental6
@@ -706,20 +709,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental6Value = (ICoreWebView2Experimental6)_rawNative;
+                        _nativeICoreWebView2Experimental6Value =
+                            (ICoreWebView2Experimental6)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental6.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental6.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental6Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental6Value = value;
-            }
+            set { _nativeICoreWebView2Experimental6Value = value; }
         }
 
         internal ICoreWebView2Experimental4 _nativeICoreWebView2Experimental4
@@ -730,20 +734,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental4Value = (ICoreWebView2Experimental4)_rawNative;
+                        _nativeICoreWebView2Experimental4Value =
+                            (ICoreWebView2Experimental4)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental4.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental4.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental4Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental4Value = value;
-            }
+            set { _nativeICoreWebView2Experimental4Value = value; }
         }
 
         internal ICoreWebView2Experimental3 _nativeICoreWebView2Experimental3
@@ -754,20 +759,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental3Value = (ICoreWebView2Experimental3)_rawNative;
+                        _nativeICoreWebView2Experimental3Value =
+                            (ICoreWebView2Experimental3)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental3.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental3.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental3Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental3Value = value;
-            }
+            set { _nativeICoreWebView2Experimental3Value = value; }
         }
 
         internal ICoreWebView2Experimental21 _nativeICoreWebView2Experimental21
@@ -778,20 +784,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental21Value = (ICoreWebView2Experimental21)_rawNative;
+                        _nativeICoreWebView2Experimental21Value =
+                            (ICoreWebView2Experimental21)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental21.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental21.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental21Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental21Value = value;
-            }
+            set { _nativeICoreWebView2Experimental21Value = value; }
         }
 
         internal ICoreWebView2Experimental5 _nativeICoreWebView2Experimental5
@@ -802,20 +809,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental5Value = (ICoreWebView2Experimental5)_rawNative;
+                        _nativeICoreWebView2Experimental5Value =
+                            (ICoreWebView2Experimental5)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental5.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental5.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental5Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental5Value = value;
-            }
+            set { _nativeICoreWebView2Experimental5Value = value; }
         }
 
         internal ICoreWebView2Experimental20 _nativeICoreWebView2Experimental20
@@ -826,20 +834,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental20Value = (ICoreWebView2Experimental20)_rawNative;
+                        _nativeICoreWebView2Experimental20Value =
+                            (ICoreWebView2Experimental20)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental20.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental20.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental20Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental20Value = value;
-            }
+            set { _nativeICoreWebView2Experimental20Value = value; }
         }
 
         internal ICoreWebView2Experimental19 _nativeICoreWebView2Experimental19
@@ -850,20 +859,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental19Value = (ICoreWebView2Experimental19)_rawNative;
+                        _nativeICoreWebView2Experimental19Value =
+                            (ICoreWebView2Experimental19)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental19.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental19.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental19Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental19Value = value;
-            }
+            set { _nativeICoreWebView2Experimental19Value = value; }
         }
 
         internal ICoreWebView2Experimental18 _nativeICoreWebView2Experimental18
@@ -874,20 +884,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental18Value = (ICoreWebView2Experimental18)_rawNative;
+                        _nativeICoreWebView2Experimental18Value =
+                            (ICoreWebView2Experimental18)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental18.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental18.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental18Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental18Value = value;
-            }
+            set { _nativeICoreWebView2Experimental18Value = value; }
         }
 
         internal ICoreWebView2Experimental17 _nativeICoreWebView2Experimental17
@@ -898,20 +909,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental17Value = (ICoreWebView2Experimental17)_rawNative;
+                        _nativeICoreWebView2Experimental17Value =
+                            (ICoreWebView2Experimental17)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental17.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental17.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental17Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental17Value = value;
-            }
+            set { _nativeICoreWebView2Experimental17Value = value; }
         }
 
         internal ICoreWebView2Experimental16 _nativeICoreWebView2Experimental16
@@ -922,20 +934,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental16Value = (ICoreWebView2Experimental16)_rawNative;
+                        _nativeICoreWebView2Experimental16Value =
+                            (ICoreWebView2Experimental16)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental16.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental16.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental16Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental16Value = value;
-            }
+            set { _nativeICoreWebView2Experimental16Value = value; }
         }
 
         internal ICoreWebView2Experimental15 _nativeICoreWebView2Experimental15
@@ -946,20 +959,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental15Value = (ICoreWebView2Experimental15)_rawNative;
+                        _nativeICoreWebView2Experimental15Value =
+                            (ICoreWebView2Experimental15)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental15.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental15.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental15Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental15Value = value;
-            }
+            set { _nativeICoreWebView2Experimental15Value = value; }
         }
 
         internal ICoreWebView2Experimental14 _nativeICoreWebView2Experimental14
@@ -970,20 +984,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental14Value = (ICoreWebView2Experimental14)_rawNative;
+                        _nativeICoreWebView2Experimental14Value =
+                            (ICoreWebView2Experimental14)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental14.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental14.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental14Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental14Value = value;
-            }
+            set { _nativeICoreWebView2Experimental14Value = value; }
         }
 
         internal ICoreWebView2Experimental13 _nativeICoreWebView2Experimental13
@@ -994,20 +1009,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental13Value = (ICoreWebView2Experimental13)_rawNative;
+                        _nativeICoreWebView2Experimental13Value =
+                            (ICoreWebView2Experimental13)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental13.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental13.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental13Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental13Value = value;
-            }
+            set { _nativeICoreWebView2Experimental13Value = value; }
         }
 
         internal ICoreWebView2Experimental12 _nativeICoreWebView2Experimental12
@@ -1018,20 +1034,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental12Value = (ICoreWebView2Experimental12)_rawNative;
+                        _nativeICoreWebView2Experimental12Value =
+                            (ICoreWebView2Experimental12)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental12.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental12.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental12Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental12Value = value;
-            }
+            set { _nativeICoreWebView2Experimental12Value = value; }
         }
 
         internal ICoreWebView2Experimental11 _nativeICoreWebView2Experimental11
@@ -1042,20 +1059,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental11Value = (ICoreWebView2Experimental11)_rawNative;
+                        _nativeICoreWebView2Experimental11Value =
+                            (ICoreWebView2Experimental11)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental11.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental11.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental11Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental11Value = value;
-            }
+            set { _nativeICoreWebView2Experimental11Value = value; }
         }
 
         internal ICoreWebView2Experimental2 _nativeICoreWebView2Experimental2
@@ -1066,20 +1084,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental2Value = (ICoreWebView2Experimental2)_rawNative;
+                        _nativeICoreWebView2Experimental2Value =
+                            (ICoreWebView2Experimental2)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental2.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental2.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental2Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental2Value = value;
-            }
+            set { _nativeICoreWebView2Experimental2Value = value; }
         }
 
         internal ICoreWebView2Experimental10 _nativeICoreWebView2Experimental10
@@ -1090,20 +1109,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental10Value = (ICoreWebView2Experimental10)_rawNative;
+                        _nativeICoreWebView2Experimental10Value =
+                            (ICoreWebView2Experimental10)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental10.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental10.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2Experimental10Value;
             }
-            set
-            {
-                _nativeICoreWebView2Experimental10Value = value;
-            }
+            set { _nativeICoreWebView2Experimental10Value = value; }
         }
 
         internal ICoreWebView2Experimental _nativeICoreWebView2Experimental
@@ -1114,20 +1134,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2ExperimentalValue = (ICoreWebView2Experimental)_rawNative;
+                        _nativeICoreWebView2ExperimentalValue =
+                            (ICoreWebView2Experimental)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Experimental.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2ExperimentalValue;
             }
-            set
-            {
-                _nativeICoreWebView2ExperimentalValue = value;
-            }
+            set { _nativeICoreWebView2ExperimentalValue = value; }
         }
 
         internal ICoreWebView2PrivatePartial _nativeICoreWebView2PrivatePartial
@@ -1138,20 +1159,21 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2PrivatePartialValue = (ICoreWebView2PrivatePartial)_rawNative;
+                        _nativeICoreWebView2PrivatePartialValue =
+                            (ICoreWebView2PrivatePartial)_rawNative;
                     }
                     catch (Exception inner)
                     {
-                        throw new NotImplementedException("Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2PrivatePartial.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning", inner);
+                        throw new NotImplementedException(
+                            "Unable to cast to Microsoft.Web.WebView2.Core.Raw.ICoreWebView2PrivatePartial.\nThis may happen if you are using an interface not supported by the version of the WebView2 Runtime you are using.\nFor instance, if you are using an experimental interface from an older SDK that has been modified or removed in a newer runtime.\nOr, if you are using a public interface from a newer SDK that wasn't implemented in an older runtime.\nFor more information about WebView2 versioning please visit the following: https://learn.microsoft.com/microsoft-edge/webview2/concepts/versioning",
+                            inner
+                        );
                     }
                 }
 
                 return _nativeICoreWebView2PrivatePartialValue;
             }
-            set
-            {
-                _nativeICoreWebView2PrivatePartialValue = value;
-            }
+            set { _nativeICoreWebView2PrivatePartialValue = value; }
         }
 
         //
@@ -1164,25 +1186,33 @@ namespace Microsoft.Web.WebView2.Core
             {
                 try
                 {
-                    return (_nativeICoreWebView2.Settings == null) ? null : new CoreWebView2Settings(_nativeICoreWebView2.Settings);
+                    return (_nativeICoreWebView2.Settings == null)
+                        ? null
+                        : new CoreWebView2Settings(_nativeICoreWebView2.Settings);
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1208,19 +1238,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1240,19 +1276,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1277,19 +1319,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1313,19 +1361,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1349,19 +1403,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1381,19 +1441,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1408,25 +1474,33 @@ namespace Microsoft.Web.WebView2.Core
             {
                 try
                 {
-                    return (_nativeICoreWebView2_2.CookieManager == null) ? null : new CoreWebView2CookieManager(_nativeICoreWebView2_2.CookieManager);
+                    return (_nativeICoreWebView2_2.CookieManager == null)
+                        ? null
+                        : new CoreWebView2CookieManager(_nativeICoreWebView2_2.CookieManager);
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1441,25 +1515,33 @@ namespace Microsoft.Web.WebView2.Core
             {
                 try
                 {
-                    return (_nativeICoreWebView2_2.Environment == null) ? null : new CoreWebView2Environment(_nativeICoreWebView2_2.Environment);
+                    return (_nativeICoreWebView2_2.Environment == null)
+                        ? null
+                        : new CoreWebView2Environment(_nativeICoreWebView2_2.Environment);
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1483,19 +1565,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -1524,19 +1612,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
             set
@@ -1556,19 +1650,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1597,19 +1697,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1641,19 +1747,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1679,30 +1791,38 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        return (CoreWebView2DefaultDownloadDialogCornerAlignment)_nativeICoreWebView2_9.DefaultDownloadDialogCornerAlignment;
+                        return (CoreWebView2DefaultDownloadDialogCornerAlignment)
+                            _nativeICoreWebView2_9.DefaultDownloadDialogCornerAlignment;
                     }
                     catch (NotImplementedException)
                     {
-                        return (CoreWebView2DefaultDownloadDialogCornerAlignment)_nativeICoreWebView2Experimental11.DefaultDownloadDialogCornerAlignment;
+                        return (CoreWebView2DefaultDownloadDialogCornerAlignment)
+                            _nativeICoreWebView2Experimental11.DefaultDownloadDialogCornerAlignment;
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
             set
@@ -1711,30 +1831,38 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_9.DefaultDownloadDialogCornerAlignment = (COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT)value;
+                        _nativeICoreWebView2_9.DefaultDownloadDialogCornerAlignment =
+                            (COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT)value;
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental11.DefaultDownloadDialogCornerAlignment = (COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT)value;
+                        _nativeICoreWebView2Experimental11.DefaultDownloadDialogCornerAlignment =
+                            (COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT)value;
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1761,30 +1889,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        return COMDotNetTypeConverter.PointCOMToNet(_nativeICoreWebView2_9.DefaultDownloadDialogMargin);
+                        return COMDotNetTypeConverter.PointCOMToNet(
+                            _nativeICoreWebView2_9.DefaultDownloadDialogMargin
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        return COMDotNetTypeConverter.PointCOMToNet(_nativeICoreWebView2Experimental11.DefaultDownloadDialogMargin);
+                        return COMDotNetTypeConverter.PointCOMToNet(
+                            _nativeICoreWebView2Experimental11.DefaultDownloadDialogMargin
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
             set
@@ -1793,30 +1931,38 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_9.DefaultDownloadDialogMargin = COMDotNetTypeConverter.PointNetToCOM(value);
+                        _nativeICoreWebView2_9.DefaultDownloadDialogMargin =
+                            COMDotNetTypeConverter.PointNetToCOM(value);
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental11.DefaultDownloadDialogMargin = COMDotNetTypeConverter.PointNetToCOM(value);
+                        _nativeICoreWebView2Experimental11.DefaultDownloadDialogMargin =
+                            COMDotNetTypeConverter.PointNetToCOM(value);
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1843,19 +1989,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1871,30 +2023,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        return (_nativeICoreWebView2_13.Profile == null) ? null : new CoreWebView2Profile(_nativeICoreWebView2_13.Profile);
+                        return (_nativeICoreWebView2_13.Profile == null)
+                            ? null
+                            : new CoreWebView2Profile(_nativeICoreWebView2_13.Profile);
                     }
                     catch (NotImplementedException)
                     {
-                        return (_nativeICoreWebView2Experimental8.Profile == null) ? null : new CoreWebView2Profile(_nativeICoreWebView2Experimental8.Profile);
+                        return (_nativeICoreWebView2Experimental8.Profile == null)
+                            ? null
+                            : new CoreWebView2Profile(_nativeICoreWebView2Experimental8.Profile);
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1922,19 +2084,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -1983,50 +2151,64 @@ namespace Microsoft.Web.WebView2.Core
             {
                 try
                 {
-                    return (CoreWebView2MemoryUsageTargetLevel)_nativeICoreWebView2Experimental5.MemoryUsageTargetLevel;
+                    return (CoreWebView2MemoryUsageTargetLevel)
+                        _nativeICoreWebView2Experimental5.MemoryUsageTargetLevel;
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
             set
             {
                 try
                 {
-                    _nativeICoreWebView2Experimental5.MemoryUsageTargetLevel = (COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL)value;
+                    _nativeICoreWebView2Experimental5.MemoryUsageTargetLevel =
+                        (COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL)value;
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2081,19 +2263,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
             set
@@ -2106,19 +2294,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2140,33 +2334,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_NavigationStarting(new CoreWebView2NavigationStartingEventHandler(OnNavigationStarting), out _navigationStartingToken);
+                        _nativeICoreWebView2.add_NavigationStarting(
+                            new CoreWebView2NavigationStartingEventHandler(OnNavigationStarting),
+                            out _navigationStartingToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                navigationStarting = (EventHandler<CoreWebView2NavigationStartingEventArgs>)Delegate.Combine(navigationStarting, value);
+                navigationStarting =
+                    (EventHandler<CoreWebView2NavigationStartingEventArgs>)
+                        Delegate.Combine(navigationStarting, value);
             }
             remove
             {
-                navigationStarting = (EventHandler<CoreWebView2NavigationStartingEventArgs>)Delegate.Remove(navigationStarting, value);
+                navigationStarting =
+                    (EventHandler<CoreWebView2NavigationStartingEventArgs>)
+                        Delegate.Remove(navigationStarting, value);
                 if (navigationStarting != null)
                 {
                     return;
@@ -2180,19 +2387,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2217,33 +2430,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_ContentLoading(new CoreWebView2ContentLoadingEventHandler(OnContentLoading), out _contentLoadingToken);
+                        _nativeICoreWebView2.add_ContentLoading(
+                            new CoreWebView2ContentLoadingEventHandler(OnContentLoading),
+                            out _contentLoadingToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                contentLoading = (EventHandler<CoreWebView2ContentLoadingEventArgs>)Delegate.Combine(contentLoading, value);
+                contentLoading =
+                    (EventHandler<CoreWebView2ContentLoadingEventArgs>)
+                        Delegate.Combine(contentLoading, value);
             }
             remove
             {
-                contentLoading = (EventHandler<CoreWebView2ContentLoadingEventArgs>)Delegate.Remove(contentLoading, value);
+                contentLoading =
+                    (EventHandler<CoreWebView2ContentLoadingEventArgs>)
+                        Delegate.Remove(contentLoading, value);
                 if (contentLoading != null)
                 {
                     return;
@@ -2257,19 +2483,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2292,33 +2524,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_SourceChanged(new CoreWebView2SourceChangedEventHandler(OnSourceChanged), out _sourceChangedToken);
+                        _nativeICoreWebView2.add_SourceChanged(
+                            new CoreWebView2SourceChangedEventHandler(OnSourceChanged),
+                            out _sourceChangedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                sourceChanged = (EventHandler<CoreWebView2SourceChangedEventArgs>)Delegate.Combine(sourceChanged, value);
+                sourceChanged =
+                    (EventHandler<CoreWebView2SourceChangedEventArgs>)
+                        Delegate.Combine(sourceChanged, value);
             }
             remove
             {
-                sourceChanged = (EventHandler<CoreWebView2SourceChangedEventArgs>)Delegate.Remove(sourceChanged, value);
+                sourceChanged =
+                    (EventHandler<CoreWebView2SourceChangedEventArgs>)
+                        Delegate.Remove(sourceChanged, value);
                 if (sourceChanged != null)
                 {
                     return;
@@ -2332,19 +2577,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2370,25 +2621,34 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_HistoryChanged(new CoreWebView2HistoryChangedEventHandler(OnHistoryChanged), out _historyChangedToken);
+                        _nativeICoreWebView2.add_HistoryChanged(
+                            new CoreWebView2HistoryChangedEventHandler(OnHistoryChanged),
+                            out _historyChangedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
@@ -2410,19 +2670,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2439,33 +2705,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_NavigationCompleted(new CoreWebView2NavigationCompletedEventHandler(OnNavigationCompleted), out _navigationCompletedToken);
+                        _nativeICoreWebView2.add_NavigationCompleted(
+                            new CoreWebView2NavigationCompletedEventHandler(OnNavigationCompleted),
+                            out _navigationCompletedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                navigationCompleted = (EventHandler<CoreWebView2NavigationCompletedEventArgs>)Delegate.Combine(navigationCompleted, value);
+                navigationCompleted =
+                    (EventHandler<CoreWebView2NavigationCompletedEventArgs>)
+                        Delegate.Combine(navigationCompleted, value);
             }
             remove
             {
-                navigationCompleted = (EventHandler<CoreWebView2NavigationCompletedEventArgs>)Delegate.Remove(navigationCompleted, value);
+                navigationCompleted =
+                    (EventHandler<CoreWebView2NavigationCompletedEventArgs>)
+                        Delegate.Remove(navigationCompleted, value);
                 if (navigationCompleted != null)
                 {
                     return;
@@ -2479,19 +2758,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2513,33 +2798,48 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_FrameNavigationStarting(new CoreWebView2NavigationStartingEventHandler(OnFrameNavigationStarting), out _frameNavigationStartingToken);
+                        _nativeICoreWebView2.add_FrameNavigationStarting(
+                            new CoreWebView2NavigationStartingEventHandler(
+                                OnFrameNavigationStarting
+                            ),
+                            out _frameNavigationStartingToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                frameNavigationStarting = (EventHandler<CoreWebView2NavigationStartingEventArgs>)Delegate.Combine(frameNavigationStarting, value);
+                frameNavigationStarting =
+                    (EventHandler<CoreWebView2NavigationStartingEventArgs>)
+                        Delegate.Combine(frameNavigationStarting, value);
             }
             remove
             {
-                frameNavigationStarting = (EventHandler<CoreWebView2NavigationStartingEventArgs>)Delegate.Remove(frameNavigationStarting, value);
+                frameNavigationStarting =
+                    (EventHandler<CoreWebView2NavigationStartingEventArgs>)
+                        Delegate.Remove(frameNavigationStarting, value);
                 if (frameNavigationStarting != null)
                 {
                     return;
@@ -2547,25 +2847,33 @@ namespace Microsoft.Web.WebView2.Core
 
                 try
                 {
-                    _nativeICoreWebView2.remove_FrameNavigationStarting(_frameNavigationStartingToken);
+                    _nativeICoreWebView2.remove_FrameNavigationStarting(
+                        _frameNavigationStartingToken
+                    );
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2582,33 +2890,48 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_FrameNavigationCompleted(new CoreWebView2NavigationCompletedEventHandler(OnFrameNavigationCompleted), out _frameNavigationCompletedToken);
+                        _nativeICoreWebView2.add_FrameNavigationCompleted(
+                            new CoreWebView2NavigationCompletedEventHandler(
+                                OnFrameNavigationCompleted
+                            ),
+                            out _frameNavigationCompletedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                frameNavigationCompleted = (EventHandler<CoreWebView2NavigationCompletedEventArgs>)Delegate.Combine(frameNavigationCompleted, value);
+                frameNavigationCompleted =
+                    (EventHandler<CoreWebView2NavigationCompletedEventArgs>)
+                        Delegate.Combine(frameNavigationCompleted, value);
             }
             remove
             {
-                frameNavigationCompleted = (EventHandler<CoreWebView2NavigationCompletedEventArgs>)Delegate.Remove(frameNavigationCompleted, value);
+                frameNavigationCompleted =
+                    (EventHandler<CoreWebView2NavigationCompletedEventArgs>)
+                        Delegate.Remove(frameNavigationCompleted, value);
                 if (frameNavigationCompleted != null)
                 {
                     return;
@@ -2616,25 +2939,33 @@ namespace Microsoft.Web.WebView2.Core
 
                 try
                 {
-                    _nativeICoreWebView2.remove_FrameNavigationCompleted(_frameNavigationCompletedToken);
+                    _nativeICoreWebView2.remove_FrameNavigationCompleted(
+                        _frameNavigationCompletedToken
+                    );
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2658,33 +2989,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_ScriptDialogOpening(new CoreWebView2ScriptDialogOpeningEventHandler(OnScriptDialogOpening), out _scriptDialogOpeningToken);
+                        _nativeICoreWebView2.add_ScriptDialogOpening(
+                            new CoreWebView2ScriptDialogOpeningEventHandler(OnScriptDialogOpening),
+                            out _scriptDialogOpeningToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                scriptDialogOpening = (EventHandler<CoreWebView2ScriptDialogOpeningEventArgs>)Delegate.Combine(scriptDialogOpening, value);
+                scriptDialogOpening =
+                    (EventHandler<CoreWebView2ScriptDialogOpeningEventArgs>)
+                        Delegate.Combine(scriptDialogOpening, value);
             }
             remove
             {
-                scriptDialogOpening = (EventHandler<CoreWebView2ScriptDialogOpeningEventArgs>)Delegate.Remove(scriptDialogOpening, value);
+                scriptDialogOpening =
+                    (EventHandler<CoreWebView2ScriptDialogOpeningEventArgs>)
+                        Delegate.Remove(scriptDialogOpening, value);
                 if (scriptDialogOpening != null)
                 {
                     return;
@@ -2698,19 +3042,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2732,33 +3082,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_PermissionRequested(new CoreWebView2PermissionRequestedEventHandler(OnPermissionRequested), out _permissionRequestedToken);
+                        _nativeICoreWebView2.add_PermissionRequested(
+                            new CoreWebView2PermissionRequestedEventHandler(OnPermissionRequested),
+                            out _permissionRequestedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                permissionRequested = (EventHandler<CoreWebView2PermissionRequestedEventArgs>)Delegate.Combine(permissionRequested, value);
+                permissionRequested =
+                    (EventHandler<CoreWebView2PermissionRequestedEventArgs>)
+                        Delegate.Combine(permissionRequested, value);
             }
             remove
             {
-                permissionRequested = (EventHandler<CoreWebView2PermissionRequestedEventArgs>)Delegate.Remove(permissionRequested, value);
+                permissionRequested =
+                    (EventHandler<CoreWebView2PermissionRequestedEventArgs>)
+                        Delegate.Remove(permissionRequested, value);
                 if (permissionRequested != null)
                 {
                     return;
@@ -2772,19 +3135,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2800,33 +3169,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_ProcessFailed(new CoreWebView2ProcessFailedEventHandler(OnProcessFailed), out _processFailedToken);
+                        _nativeICoreWebView2.add_ProcessFailed(
+                            new CoreWebView2ProcessFailedEventHandler(OnProcessFailed),
+                            out _processFailedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                processFailed = (EventHandler<CoreWebView2ProcessFailedEventArgs>)Delegate.Combine(processFailed, value);
+                processFailed =
+                    (EventHandler<CoreWebView2ProcessFailedEventArgs>)
+                        Delegate.Combine(processFailed, value);
             }
             remove
             {
-                processFailed = (EventHandler<CoreWebView2ProcessFailedEventArgs>)Delegate.Remove(processFailed, value);
+                processFailed =
+                    (EventHandler<CoreWebView2ProcessFailedEventArgs>)
+                        Delegate.Remove(processFailed, value);
                 if (processFailed != null)
                 {
                     return;
@@ -2840,19 +3222,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2887,33 +3275,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_WebMessageReceived(new CoreWebView2WebMessageReceivedEventHandler(OnWebMessageReceived), out _webMessageReceivedToken);
+                        _nativeICoreWebView2.add_WebMessageReceived(
+                            new CoreWebView2WebMessageReceivedEventHandler(OnWebMessageReceived),
+                            out _webMessageReceivedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                webMessageReceived = (EventHandler<CoreWebView2WebMessageReceivedEventArgs>)Delegate.Combine(webMessageReceived, value);
+                webMessageReceived =
+                    (EventHandler<CoreWebView2WebMessageReceivedEventArgs>)
+                        Delegate.Combine(webMessageReceived, value);
             }
             remove
             {
-                webMessageReceived = (EventHandler<CoreWebView2WebMessageReceivedEventArgs>)Delegate.Remove(webMessageReceived, value);
+                webMessageReceived =
+                    (EventHandler<CoreWebView2WebMessageReceivedEventArgs>)
+                        Delegate.Remove(webMessageReceived, value);
                 if (webMessageReceived != null)
                 {
                     return;
@@ -2927,19 +3328,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -2972,33 +3379,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_NewWindowRequested(new CoreWebView2NewWindowRequestedEventHandler(OnNewWindowRequested), out _newWindowRequestedToken);
+                        _nativeICoreWebView2.add_NewWindowRequested(
+                            new CoreWebView2NewWindowRequestedEventHandler(OnNewWindowRequested),
+                            out _newWindowRequestedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                newWindowRequested = (EventHandler<CoreWebView2NewWindowRequestedEventArgs>)Delegate.Combine(newWindowRequested, value);
+                newWindowRequested =
+                    (EventHandler<CoreWebView2NewWindowRequestedEventArgs>)
+                        Delegate.Combine(newWindowRequested, value);
             }
             remove
             {
-                newWindowRequested = (EventHandler<CoreWebView2NewWindowRequestedEventArgs>)Delegate.Remove(newWindowRequested, value);
+                newWindowRequested =
+                    (EventHandler<CoreWebView2NewWindowRequestedEventArgs>)
+                        Delegate.Remove(newWindowRequested, value);
                 if (newWindowRequested != null)
                 {
                     return;
@@ -3012,19 +3432,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3042,33 +3468,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_DocumentTitleChanged(new CoreWebView2DocumentTitleChangedEventHandler(OnDocumentTitleChanged), out _documentTitleChangedToken);
+                        _nativeICoreWebView2.add_DocumentTitleChanged(
+                            new CoreWebView2DocumentTitleChangedEventHandler(
+                                OnDocumentTitleChanged
+                            ),
+                            out _documentTitleChangedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                documentTitleChanged = (EventHandler<object>)Delegate.Combine(documentTitleChanged, value);
+                documentTitleChanged =
+                    (EventHandler<object>)Delegate.Combine(documentTitleChanged, value);
             }
             remove
             {
-                documentTitleChanged = (EventHandler<object>)Delegate.Remove(documentTitleChanged, value);
+                documentTitleChanged =
+                    (EventHandler<object>)Delegate.Remove(documentTitleChanged, value);
                 if (documentTitleChanged != null)
                 {
                     return;
@@ -3082,19 +3521,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3117,33 +3562,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_ContainsFullScreenElementChanged(new CoreWebView2ContainsFullScreenElementChangedEventHandler(OnContainsFullScreenElementChanged), out _containsFullScreenElementChangedToken);
+                        _nativeICoreWebView2.add_ContainsFullScreenElementChanged(
+                            new CoreWebView2ContainsFullScreenElementChangedEventHandler(
+                                OnContainsFullScreenElementChanged
+                            ),
+                            out _containsFullScreenElementChangedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                containsFullScreenElementChanged = (EventHandler<object>)Delegate.Combine(containsFullScreenElementChanged, value);
+                containsFullScreenElementChanged =
+                    (EventHandler<object>)Delegate.Combine(containsFullScreenElementChanged, value);
             }
             remove
             {
-                containsFullScreenElementChanged = (EventHandler<object>)Delegate.Remove(containsFullScreenElementChanged, value);
+                containsFullScreenElementChanged =
+                    (EventHandler<object>)Delegate.Remove(containsFullScreenElementChanged, value);
                 if (containsFullScreenElementChanged != null)
                 {
                     return;
@@ -3151,25 +3609,33 @@ namespace Microsoft.Web.WebView2.Core
 
                 try
                 {
-                    _nativeICoreWebView2.remove_ContainsFullScreenElementChanged(_containsFullScreenElementChangedToken);
+                    _nativeICoreWebView2.remove_ContainsFullScreenElementChanged(
+                        _containsFullScreenElementChangedToken
+                    );
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3195,33 +3661,48 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_WebResourceRequested(new CoreWebView2WebResourceRequestedEventHandler(OnWebResourceRequested), out _webResourceRequestedToken);
+                        _nativeICoreWebView2.add_WebResourceRequested(
+                            new CoreWebView2WebResourceRequestedEventHandler(
+                                OnWebResourceRequested
+                            ),
+                            out _webResourceRequestedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                webResourceRequested = (EventHandler<CoreWebView2WebResourceRequestedEventArgs>)Delegate.Combine(webResourceRequested, value);
+                webResourceRequested =
+                    (EventHandler<CoreWebView2WebResourceRequestedEventArgs>)
+                        Delegate.Combine(webResourceRequested, value);
             }
             remove
             {
-                webResourceRequested = (EventHandler<CoreWebView2WebResourceRequestedEventArgs>)Delegate.Remove(webResourceRequested, value);
+                webResourceRequested =
+                    (EventHandler<CoreWebView2WebResourceRequestedEventArgs>)
+                        Delegate.Remove(webResourceRequested, value);
                 if (webResourceRequested != null)
                 {
                     return;
@@ -3235,19 +3716,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3268,33 +3755,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2.add_WindowCloseRequested(new CoreWebView2WindowCloseRequestedEventHandler(OnWindowCloseRequested), out _windowCloseRequestedToken);
+                        _nativeICoreWebView2.add_WindowCloseRequested(
+                            new CoreWebView2WindowCloseRequestedEventHandler(
+                                OnWindowCloseRequested
+                            ),
+                            out _windowCloseRequestedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                windowCloseRequested = (EventHandler<object>)Delegate.Combine(windowCloseRequested, value);
+                windowCloseRequested =
+                    (EventHandler<object>)Delegate.Combine(windowCloseRequested, value);
             }
             remove
             {
-                windowCloseRequested = (EventHandler<object>)Delegate.Remove(windowCloseRequested, value);
+                windowCloseRequested =
+                    (EventHandler<object>)Delegate.Remove(windowCloseRequested, value);
                 if (windowCloseRequested != null)
                 {
                     return;
@@ -3308,19 +3808,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3349,33 +3855,48 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_2.add_WebResourceResponseReceived(new CoreWebView2WebResourceResponseReceivedEventHandler(OnWebResourceResponseReceived), out _webResourceResponseReceivedToken);
+                        _nativeICoreWebView2_2.add_WebResourceResponseReceived(
+                            new CoreWebView2WebResourceResponseReceivedEventHandler(
+                                OnWebResourceResponseReceived
+                            ),
+                            out _webResourceResponseReceivedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                webResourceResponseReceived = (EventHandler<CoreWebView2WebResourceResponseReceivedEventArgs>)Delegate.Combine(webResourceResponseReceived, value);
+                webResourceResponseReceived =
+                    (EventHandler<CoreWebView2WebResourceResponseReceivedEventArgs>)
+                        Delegate.Combine(webResourceResponseReceived, value);
             }
             remove
             {
-                webResourceResponseReceived = (EventHandler<CoreWebView2WebResourceResponseReceivedEventArgs>)Delegate.Remove(webResourceResponseReceived, value);
+                webResourceResponseReceived =
+                    (EventHandler<CoreWebView2WebResourceResponseReceivedEventArgs>)
+                        Delegate.Remove(webResourceResponseReceived, value);
                 if (webResourceResponseReceived != null)
                 {
                     return;
@@ -3383,25 +3904,33 @@ namespace Microsoft.Web.WebView2.Core
 
                 try
                 {
-                    _nativeICoreWebView2_2.remove_WebResourceResponseReceived(_webResourceResponseReceivedToken);
+                    _nativeICoreWebView2_2.remove_WebResourceResponseReceived(
+                        _webResourceResponseReceivedToken
+                    );
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3420,33 +3949,46 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_2.add_DOMContentLoaded(new CoreWebView2DOMContentLoadedEventHandler(OnDOMContentLoaded), out _dOMContentLoadedToken);
+                        _nativeICoreWebView2_2.add_DOMContentLoaded(
+                            new CoreWebView2DOMContentLoadedEventHandler(OnDOMContentLoaded),
+                            out _dOMContentLoadedToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                dOMContentLoaded = (EventHandler<CoreWebView2DOMContentLoadedEventArgs>)Delegate.Combine(dOMContentLoaded, value);
+                dOMContentLoaded =
+                    (EventHandler<CoreWebView2DOMContentLoadedEventArgs>)
+                        Delegate.Combine(dOMContentLoaded, value);
             }
             remove
             {
-                dOMContentLoaded = (EventHandler<CoreWebView2DOMContentLoadedEventArgs>)Delegate.Remove(dOMContentLoaded, value);
+                dOMContentLoaded =
+                    (EventHandler<CoreWebView2DOMContentLoadedEventArgs>)
+                        Delegate.Remove(dOMContentLoaded, value);
                 if (dOMContentLoaded != null)
                 {
                     return;
@@ -3460,19 +4002,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -3495,38 +4043,54 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_4.add_FrameCreated(new CoreWebView2FrameCreatedEventHandler(OnFrameCreated), out _frameCreatedToken);
+                            _nativeICoreWebView2_4.add_FrameCreated(
+                                new CoreWebView2FrameCreatedEventHandler(OnFrameCreated),
+                                out _frameCreatedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental.add_FrameCreated(new CoreWebView2FrameCreatedEventHandler(OnFrameCreated), out _frameCreatedToken);
+                            _nativeICoreWebView2Experimental.add_FrameCreated(
+                                new CoreWebView2FrameCreatedEventHandler(OnFrameCreated),
+                                out _frameCreatedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                frameCreated = (EventHandler<CoreWebView2FrameCreatedEventArgs>)Delegate.Combine(frameCreated, value);
+                frameCreated =
+                    (EventHandler<CoreWebView2FrameCreatedEventArgs>)
+                        Delegate.Combine(frameCreated, value);
             }
             remove
             {
-                frameCreated = (EventHandler<CoreWebView2FrameCreatedEventArgs>)Delegate.Remove(frameCreated, value);
+                frameCreated =
+                    (EventHandler<CoreWebView2FrameCreatedEventArgs>)
+                        Delegate.Remove(frameCreated, value);
                 if (frameCreated != null)
                 {
                     return;
@@ -3547,19 +4111,25 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -3584,38 +4154,54 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_4.add_DownloadStarting(new CoreWebView2DownloadStartingEventHandler(OnDownloadStarting), out _downloadStartingToken);
+                            _nativeICoreWebView2_4.add_DownloadStarting(
+                                new CoreWebView2DownloadStartingEventHandler(OnDownloadStarting),
+                                out _downloadStartingToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental2.add_DownloadStarting(new CoreWebView2DownloadStartingEventHandler(OnDownloadStarting), out _downloadStartingToken);
+                            _nativeICoreWebView2Experimental2.add_DownloadStarting(
+                                new CoreWebView2DownloadStartingEventHandler(OnDownloadStarting),
+                                out _downloadStartingToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                downloadStarting = (EventHandler<CoreWebView2DownloadStartingEventArgs>)Delegate.Combine(downloadStarting, value);
+                downloadStarting =
+                    (EventHandler<CoreWebView2DownloadStartingEventArgs>)
+                        Delegate.Combine(downloadStarting, value);
             }
             remove
             {
-                downloadStarting = (EventHandler<CoreWebView2DownloadStartingEventArgs>)Delegate.Remove(downloadStarting, value);
+                downloadStarting =
+                    (EventHandler<CoreWebView2DownloadStartingEventArgs>)
+                        Delegate.Remove(downloadStarting, value);
                 if (downloadStarting != null)
                 {
                     return;
@@ -3629,26 +4215,34 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental2.remove_DownloadStarting(_downloadStartingToken);
+                        _nativeICoreWebView2Experimental2.remove_DownloadStarting(
+                            _downloadStartingToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -3679,38 +4273,58 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_5.add_ClientCertificateRequested(new CoreWebView2ClientCertificateRequestedEventHandler(OnClientCertificateRequested), out _clientCertificateRequestedToken);
+                            _nativeICoreWebView2_5.add_ClientCertificateRequested(
+                                new CoreWebView2ClientCertificateRequestedEventHandler(
+                                    OnClientCertificateRequested
+                                ),
+                                out _clientCertificateRequestedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental3.add_ClientCertificateRequested(new CoreWebView2ClientCertificateRequestedEventHandler(OnClientCertificateRequested), out _clientCertificateRequestedToken);
+                            _nativeICoreWebView2Experimental3.add_ClientCertificateRequested(
+                                new CoreWebView2ClientCertificateRequestedEventHandler(
+                                    OnClientCertificateRequested
+                                ),
+                                out _clientCertificateRequestedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                clientCertificateRequested = (EventHandler<CoreWebView2ClientCertificateRequestedEventArgs>)Delegate.Combine(clientCertificateRequested, value);
+                clientCertificateRequested =
+                    (EventHandler<CoreWebView2ClientCertificateRequestedEventArgs>)
+                        Delegate.Combine(clientCertificateRequested, value);
             }
             remove
             {
-                clientCertificateRequested = (EventHandler<CoreWebView2ClientCertificateRequestedEventArgs>)Delegate.Remove(clientCertificateRequested, value);
+                clientCertificateRequested =
+                    (EventHandler<CoreWebView2ClientCertificateRequestedEventArgs>)
+                        Delegate.Remove(clientCertificateRequested, value);
                 if (clientCertificateRequested != null)
                 {
                     return;
@@ -3720,30 +4334,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_5.remove_ClientCertificateRequested(_clientCertificateRequestedToken);
+                        _nativeICoreWebView2_5.remove_ClientCertificateRequested(
+                            _clientCertificateRequestedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental3.remove_ClientCertificateRequested(_clientCertificateRequestedToken);
+                        _nativeICoreWebView2Experimental3.remove_ClientCertificateRequested(
+                            _clientCertificateRequestedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -3761,30 +4385,42 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_8.add_IsMutedChanged(new CoreWebView2IsMutedChangedEventHandler(OnIsMutedChanged), out _isMutedChangedToken);
+                            _nativeICoreWebView2_8.add_IsMutedChanged(
+                                new CoreWebView2IsMutedChangedEventHandler(OnIsMutedChanged),
+                                out _isMutedChangedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental9.add_IsMutedChanged(new CoreWebView2IsMutedChangedEventHandler(OnIsMutedChanged), out _isMutedChangedToken);
+                            _nativeICoreWebView2Experimental9.add_IsMutedChanged(
+                                new CoreWebView2IsMutedChangedEventHandler(OnIsMutedChanged),
+                                out _isMutedChangedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
@@ -3806,26 +4442,34 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental9.remove_IsMutedChanged(_isMutedChangedToken);
+                        _nativeICoreWebView2Experimental9.remove_IsMutedChanged(
+                            _isMutedChangedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -3844,38 +4488,56 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_8.add_IsDocumentPlayingAudioChanged(new CoreWebView2IsDocumentPlayingAudioChangedEventHandler(OnIsDocumentPlayingAudioChanged), out _isDocumentPlayingAudioChangedToken);
+                            _nativeICoreWebView2_8.add_IsDocumentPlayingAudioChanged(
+                                new CoreWebView2IsDocumentPlayingAudioChangedEventHandler(
+                                    OnIsDocumentPlayingAudioChanged
+                                ),
+                                out _isDocumentPlayingAudioChangedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental9.add_IsDocumentPlayingAudioChanged(new CoreWebView2IsDocumentPlayingAudioChangedEventHandler(OnIsDocumentPlayingAudioChanged), out _isDocumentPlayingAudioChangedToken);
+                            _nativeICoreWebView2Experimental9.add_IsDocumentPlayingAudioChanged(
+                                new CoreWebView2IsDocumentPlayingAudioChangedEventHandler(
+                                    OnIsDocumentPlayingAudioChanged
+                                ),
+                                out _isDocumentPlayingAudioChangedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                isDocumentPlayingAudioChanged = (EventHandler<object>)Delegate.Combine(isDocumentPlayingAudioChanged, value);
+                isDocumentPlayingAudioChanged =
+                    (EventHandler<object>)Delegate.Combine(isDocumentPlayingAudioChanged, value);
             }
             remove
             {
-                isDocumentPlayingAudioChanged = (EventHandler<object>)Delegate.Remove(isDocumentPlayingAudioChanged, value);
+                isDocumentPlayingAudioChanged =
+                    (EventHandler<object>)Delegate.Remove(isDocumentPlayingAudioChanged, value);
                 if (isDocumentPlayingAudioChanged != null)
                 {
                     return;
@@ -3885,30 +4547,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_8.remove_IsDocumentPlayingAudioChanged(_isDocumentPlayingAudioChangedToken);
+                        _nativeICoreWebView2_8.remove_IsDocumentPlayingAudioChanged(
+                            _isDocumentPlayingAudioChangedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental9.remove_IsDocumentPlayingAudioChanged(_isDocumentPlayingAudioChangedToken);
+                        _nativeICoreWebView2Experimental9.remove_IsDocumentPlayingAudioChanged(
+                            _isDocumentPlayingAudioChangedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -3933,38 +4605,58 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_9.add_IsDefaultDownloadDialogOpenChanged(new CoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler(OnIsDefaultDownloadDialogOpenChanged), out _isDefaultDownloadDialogOpenChangedToken);
+                            _nativeICoreWebView2_9.add_IsDefaultDownloadDialogOpenChanged(
+                                new CoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler(
+                                    OnIsDefaultDownloadDialogOpenChanged
+                                ),
+                                out _isDefaultDownloadDialogOpenChangedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental11.add_IsDefaultDownloadDialogOpenChanged(new CoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler(OnIsDefaultDownloadDialogOpenChanged), out _isDefaultDownloadDialogOpenChangedToken);
+                            _nativeICoreWebView2Experimental11.add_IsDefaultDownloadDialogOpenChanged(
+                                new CoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler(
+                                    OnIsDefaultDownloadDialogOpenChanged
+                                ),
+                                out _isDefaultDownloadDialogOpenChangedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                isDefaultDownloadDialogOpenChanged = (EventHandler<object>)Delegate.Combine(isDefaultDownloadDialogOpenChanged, value);
+                isDefaultDownloadDialogOpenChanged =
+                    (EventHandler<object>)
+                        Delegate.Combine(isDefaultDownloadDialogOpenChanged, value);
             }
             remove
             {
-                isDefaultDownloadDialogOpenChanged = (EventHandler<object>)Delegate.Remove(isDefaultDownloadDialogOpenChanged, value);
+                isDefaultDownloadDialogOpenChanged =
+                    (EventHandler<object>)
+                        Delegate.Remove(isDefaultDownloadDialogOpenChanged, value);
                 if (isDefaultDownloadDialogOpenChanged != null)
                 {
                     return;
@@ -3974,30 +4666,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_9.remove_IsDefaultDownloadDialogOpenChanged(_isDefaultDownloadDialogOpenChangedToken);
+                        _nativeICoreWebView2_9.remove_IsDefaultDownloadDialogOpenChanged(
+                            _isDefaultDownloadDialogOpenChangedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental11.remove_IsDefaultDownloadDialogOpenChanged(_isDefaultDownloadDialogOpenChangedToken);
+                        _nativeICoreWebView2Experimental11.remove_IsDefaultDownloadDialogOpenChanged(
+                            _isDefaultDownloadDialogOpenChangedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -4024,38 +4726,58 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_10.add_BasicAuthenticationRequested(new CoreWebView2BasicAuthenticationRequestedEventHandler(OnBasicAuthenticationRequested), out _basicAuthenticationRequestedToken);
+                            _nativeICoreWebView2_10.add_BasicAuthenticationRequested(
+                                new CoreWebView2BasicAuthenticationRequestedEventHandler(
+                                    OnBasicAuthenticationRequested
+                                ),
+                                out _basicAuthenticationRequestedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental10.add_BasicAuthenticationRequested(new CoreWebView2BasicAuthenticationRequestedEventHandler(OnBasicAuthenticationRequested), out _basicAuthenticationRequestedToken);
+                            _nativeICoreWebView2Experimental10.add_BasicAuthenticationRequested(
+                                new CoreWebView2BasicAuthenticationRequestedEventHandler(
+                                    OnBasicAuthenticationRequested
+                                ),
+                                out _basicAuthenticationRequestedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                basicAuthenticationRequested = (EventHandler<CoreWebView2BasicAuthenticationRequestedEventArgs>)Delegate.Combine(basicAuthenticationRequested, value);
+                basicAuthenticationRequested =
+                    (EventHandler<CoreWebView2BasicAuthenticationRequestedEventArgs>)
+                        Delegate.Combine(basicAuthenticationRequested, value);
             }
             remove
             {
-                basicAuthenticationRequested = (EventHandler<CoreWebView2BasicAuthenticationRequestedEventArgs>)Delegate.Remove(basicAuthenticationRequested, value);
+                basicAuthenticationRequested =
+                    (EventHandler<CoreWebView2BasicAuthenticationRequestedEventArgs>)
+                        Delegate.Remove(basicAuthenticationRequested, value);
                 if (basicAuthenticationRequested != null)
                 {
                     return;
@@ -4065,30 +4787,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_10.remove_BasicAuthenticationRequested(_basicAuthenticationRequestedToken);
+                        _nativeICoreWebView2_10.remove_BasicAuthenticationRequested(
+                            _basicAuthenticationRequestedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental10.remove_BasicAuthenticationRequested(_basicAuthenticationRequestedToken);
+                        _nativeICoreWebView2Experimental10.remove_BasicAuthenticationRequested(
+                            _basicAuthenticationRequestedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -4113,38 +4845,58 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_11.add_ContextMenuRequested(new CoreWebView2ContextMenuRequestedEventHandler(OnContextMenuRequested), out _contextMenuRequestedToken);
+                            _nativeICoreWebView2_11.add_ContextMenuRequested(
+                                new CoreWebView2ContextMenuRequestedEventHandler(
+                                    OnContextMenuRequested
+                                ),
+                                out _contextMenuRequestedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental6.add_ContextMenuRequested(new CoreWebView2ContextMenuRequestedEventHandler(OnContextMenuRequested), out _contextMenuRequestedToken);
+                            _nativeICoreWebView2Experimental6.add_ContextMenuRequested(
+                                new CoreWebView2ContextMenuRequestedEventHandler(
+                                    OnContextMenuRequested
+                                ),
+                                out _contextMenuRequestedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                contextMenuRequested = (EventHandler<CoreWebView2ContextMenuRequestedEventArgs>)Delegate.Combine(contextMenuRequested, value);
+                contextMenuRequested =
+                    (EventHandler<CoreWebView2ContextMenuRequestedEventArgs>)
+                        Delegate.Combine(contextMenuRequested, value);
             }
             remove
             {
-                contextMenuRequested = (EventHandler<CoreWebView2ContextMenuRequestedEventArgs>)Delegate.Remove(contextMenuRequested, value);
+                contextMenuRequested =
+                    (EventHandler<CoreWebView2ContextMenuRequestedEventArgs>)
+                        Delegate.Remove(contextMenuRequested, value);
                 if (contextMenuRequested != null)
                 {
                     return;
@@ -4154,30 +4906,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_11.remove_ContextMenuRequested(_contextMenuRequestedToken);
+                        _nativeICoreWebView2_11.remove_ContextMenuRequested(
+                            _contextMenuRequestedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental6.remove_ContextMenuRequested(_contextMenuRequestedToken);
+                        _nativeICoreWebView2Experimental6.remove_ContextMenuRequested(
+                            _contextMenuRequestedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -4202,38 +4964,56 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_12.add_StatusBarTextChanged(new CoreWebView2StatusBarTextChangedEventHandler(OnStatusBarTextChanged), out _statusBarTextChangedToken);
+                            _nativeICoreWebView2_12.add_StatusBarTextChanged(
+                                new CoreWebView2StatusBarTextChangedEventHandler(
+                                    OnStatusBarTextChanged
+                                ),
+                                out _statusBarTextChangedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental13.add_StatusBarTextChanged(new CoreWebView2StatusBarTextChangedEventHandler(OnStatusBarTextChanged), out _statusBarTextChangedToken);
+                            _nativeICoreWebView2Experimental13.add_StatusBarTextChanged(
+                                new CoreWebView2StatusBarTextChangedEventHandler(
+                                    OnStatusBarTextChanged
+                                ),
+                                out _statusBarTextChangedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                statusBarTextChanged = (EventHandler<object>)Delegate.Combine(statusBarTextChanged, value);
+                statusBarTextChanged =
+                    (EventHandler<object>)Delegate.Combine(statusBarTextChanged, value);
             }
             remove
             {
-                statusBarTextChanged = (EventHandler<object>)Delegate.Remove(statusBarTextChanged, value);
+                statusBarTextChanged =
+                    (EventHandler<object>)Delegate.Remove(statusBarTextChanged, value);
                 if (statusBarTextChanged != null)
                 {
                     return;
@@ -4243,30 +5023,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_12.remove_StatusBarTextChanged(_statusBarTextChangedToken);
+                        _nativeICoreWebView2_12.remove_StatusBarTextChanged(
+                            _statusBarTextChangedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental13.remove_StatusBarTextChanged(_statusBarTextChangedToken);
+                        _nativeICoreWebView2Experimental13.remove_StatusBarTextChanged(
+                            _statusBarTextChangedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -4281,38 +5071,58 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_14.add_ServerCertificateErrorDetected(new CoreWebView2ServerCertificateErrorDetectedEventHandler(OnServerCertificateErrorDetected), out _serverCertificateErrorDetectedToken);
+                            _nativeICoreWebView2_14.add_ServerCertificateErrorDetected(
+                                new CoreWebView2ServerCertificateErrorDetectedEventHandler(
+                                    OnServerCertificateErrorDetected
+                                ),
+                                out _serverCertificateErrorDetectedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental15.add_ServerCertificateErrorDetected(new CoreWebView2ServerCertificateErrorDetectedEventHandler(OnServerCertificateErrorDetected), out _serverCertificateErrorDetectedToken);
+                            _nativeICoreWebView2Experimental15.add_ServerCertificateErrorDetected(
+                                new CoreWebView2ServerCertificateErrorDetectedEventHandler(
+                                    OnServerCertificateErrorDetected
+                                ),
+                                out _serverCertificateErrorDetectedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
-                serverCertificateErrorDetected = (EventHandler<CoreWebView2ServerCertificateErrorDetectedEventArgs>)Delegate.Combine(serverCertificateErrorDetected, value);
+                serverCertificateErrorDetected =
+                    (EventHandler<CoreWebView2ServerCertificateErrorDetectedEventArgs>)
+                        Delegate.Combine(serverCertificateErrorDetected, value);
             }
             remove
             {
-                serverCertificateErrorDetected = (EventHandler<CoreWebView2ServerCertificateErrorDetectedEventArgs>)Delegate.Remove(serverCertificateErrorDetected, value);
+                serverCertificateErrorDetected =
+                    (EventHandler<CoreWebView2ServerCertificateErrorDetectedEventArgs>)
+                        Delegate.Remove(serverCertificateErrorDetected, value);
                 if (serverCertificateErrorDetected != null)
                 {
                     return;
@@ -4322,30 +5132,40 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2_14.remove_ServerCertificateErrorDetected(_serverCertificateErrorDetectedToken);
+                        _nativeICoreWebView2_14.remove_ServerCertificateErrorDetected(
+                            _serverCertificateErrorDetectedToken
+                        );
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental15.remove_ServerCertificateErrorDetected(_serverCertificateErrorDetectedToken);
+                        _nativeICoreWebView2Experimental15.remove_ServerCertificateErrorDetected(
+                            _serverCertificateErrorDetectedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -4369,30 +5189,42 @@ namespace Microsoft.Web.WebView2.Core
                     {
                         try
                         {
-                            _nativeICoreWebView2_15.add_FaviconChanged(new CoreWebView2FaviconChangedEventHandler(OnFaviconChanged), out _faviconChangedToken);
+                            _nativeICoreWebView2_15.add_FaviconChanged(
+                                new CoreWebView2FaviconChangedEventHandler(OnFaviconChanged),
+                                out _faviconChangedToken
+                            );
                         }
                         catch (NotImplementedException)
                         {
-                            _nativeICoreWebView2Experimental12.add_FaviconChanged(new CoreWebView2FaviconChangedEventHandler(OnFaviconChanged), out _faviconChangedToken);
+                            _nativeICoreWebView2Experimental12.add_FaviconChanged(
+                                new CoreWebView2FaviconChangedEventHandler(OnFaviconChanged),
+                                out _faviconChangedToken
+                            );
                         }
                     }
                     catch (InvalidCastException ex2)
                     {
                         if (ex2.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                     catch (COMException ex3)
                     {
                         if (ex3.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex3
+                            );
                         }
 
-                        throw ex3;
+                        throw;
                     }
                 }
 
@@ -4414,26 +5246,34 @@ namespace Microsoft.Web.WebView2.Core
                     }
                     catch (NotImplementedException)
                     {
-                        _nativeICoreWebView2Experimental12.remove_FaviconChanged(_faviconChangedToken);
+                        _nativeICoreWebView2Experimental12.remove_FaviconChanged(
+                            _faviconChangedToken
+                        );
                     }
                 }
                 catch (InvalidCastException ex2)
                 {
                     if (ex2.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
                 catch (COMException ex3)
                 {
                     if (ex3.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex3
+                        );
                     }
 
-                    throw ex3;
+                    throw;
                 }
             }
         }
@@ -4450,33 +5290,48 @@ namespace Microsoft.Web.WebView2.Core
                 {
                     try
                     {
-                        _nativeICoreWebView2Experimental21.add_LaunchingExternalUriScheme(new CoreWebView2ExperimentalLaunchingExternalUriSchemeEventHandler(OnLaunchingExternalUriScheme), out _launchingExternalUriSchemeToken);
+                        _nativeICoreWebView2Experimental21.add_LaunchingExternalUriScheme(
+                            new CoreWebView2ExperimentalLaunchingExternalUriSchemeEventHandler(
+                                OnLaunchingExternalUriScheme
+                            ),
+                            out _launchingExternalUriSchemeToken
+                        );
                     }
                     catch (InvalidCastException ex)
                     {
                         if (ex.HResult == -2147467262)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members can only be accessed from the UI thread.",
+                                ex
+                            );
                         }
 
-                        throw ex;
+                        throw;
                     }
                     catch (COMException ex2)
                     {
                         if (ex2.HResult == -2147019873)
                         {
-                            throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                            throw new InvalidOperationException(
+                                "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                                ex2
+                            );
                         }
 
-                        throw ex2;
+                        throw;
                     }
                 }
 
-                launchingExternalUriScheme = (EventHandler<CoreWebView2LaunchingExternalUriSchemeEventArgs>)Delegate.Combine(launchingExternalUriScheme, value);
+                launchingExternalUriScheme =
+                    (EventHandler<CoreWebView2LaunchingExternalUriSchemeEventArgs>)
+                        Delegate.Combine(launchingExternalUriScheme, value);
             }
             remove
             {
-                launchingExternalUriScheme = (EventHandler<CoreWebView2LaunchingExternalUriSchemeEventArgs>)Delegate.Remove(launchingExternalUriScheme, value);
+                launchingExternalUriScheme =
+                    (EventHandler<CoreWebView2LaunchingExternalUriSchemeEventArgs>)
+                        Delegate.Remove(launchingExternalUriScheme, value);
                 if (launchingExternalUriScheme != null)
                 {
                     return;
@@ -4484,25 +5339,33 @@ namespace Microsoft.Web.WebView2.Core
 
                 try
                 {
-                    _nativeICoreWebView2Experimental21.remove_LaunchingExternalUriScheme(_launchingExternalUriSchemeToken);
+                    _nativeICoreWebView2Experimental21.remove_LaunchingExternalUriScheme(
+                        _launchingExternalUriSchemeToken
+                    );
                 }
                 catch (InvalidCastException ex)
                 {
                     if (ex.HResult == -2147467262)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members can only be accessed from the UI thread.",
+                            ex
+                        );
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
                     if (ex2.HResult == -2147019873)
                     {
-                        throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                        throw new InvalidOperationException(
+                            "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                            ex2
+                        );
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -4522,39 +5385,53 @@ namespace Microsoft.Web.WebView2.Core
         //     Only one `Printing` operation can be in progress at a time. If PrintToPdf is
         //     called while a `PrintToPdf` or `PrintToPdfStream` or `Print` operation is in
         //     progress, the operation completes and returns false.
-        public async Task<bool> PrintToPdfAsync(string ResultFilePath, CoreWebView2PrintSettings printSettings = null)
+        public async Task<bool> PrintToPdfAsync(
+            string ResultFilePath,
+            CoreWebView2PrintSettings printSettings = null
+        )
         {
             CoreWebView2PrintToPdfCompletedHandler handler;
             try
             {
                 handler = new CoreWebView2PrintToPdfCompletedHandler();
-                ICoreWebView2PrintSettings printSettings2 = printSettings?._nativeICoreWebView2PrintSettings;
+                ICoreWebView2PrintSettings printSettings2 =
+                    printSettings?._nativeICoreWebView2PrintSettings;
                 try
                 {
                     _nativeICoreWebView2_7.PrintToPdf(ResultFilePath, printSettings2, handler);
                 }
                 catch (NotImplementedException)
                 {
-                    _nativeICoreWebView2Experimental7.PrintToPdf(ResultFilePath, printSettings2, handler);
+                    _nativeICoreWebView2Experimental7.PrintToPdf(
+                        ResultFilePath,
+                        printSettings2,
+                        handler
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
 
             await handler;
@@ -4579,29 +5456,43 @@ namespace Microsoft.Web.WebView2.Core
         //   RequestSourceKinds:
         //     A request source filter to be added to the Microsoft.Web.WebView2.Core.CoreWebView2.WebResourceRequested
         //     event.
-        public void AddWebResourceRequestedFilter(string uri, CoreWebView2WebResourceContext ResourceContext, CoreWebView2WebResourceRequestSourceKinds RequestSourceKinds)
+        public void AddWebResourceRequestedFilter(
+            string uri,
+            CoreWebView2WebResourceContext ResourceContext,
+            CoreWebView2WebResourceRequestSourceKinds RequestSourceKinds
+        )
         {
             try
             {
-                _nativeICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds(uri, (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext, (COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS)RequestSourceKinds);
+                _nativeICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds(
+                    uri,
+                    (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext,
+                    (COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS)RequestSourceKinds
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -4622,29 +5513,43 @@ namespace Microsoft.Web.WebView2.Core
         //   RequestSourceKinds:
         //     A request source filter to be added to the Microsoft.Web.WebView2.Core.CoreWebView2.WebResourceRequested
         //     event.
-        public void RemoveWebResourceRequestedFilter(string uri, CoreWebView2WebResourceContext ResourceContext, CoreWebView2WebResourceRequestSourceKinds RequestSourceKinds)
+        public void RemoveWebResourceRequestedFilter(
+            string uri,
+            CoreWebView2WebResourceContext ResourceContext,
+            CoreWebView2WebResourceRequestSourceKinds RequestSourceKinds
+        )
         {
             try
             {
-                _nativeICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds(uri, (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext, (COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS)RequestSourceKinds);
+                _nativeICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds(
+                    uri,
+                    (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext,
+                    (COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS)RequestSourceKinds
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -4656,25 +5561,33 @@ namespace Microsoft.Web.WebView2.Core
             try
             {
                 CoreWebView2PrintDialogKind printDialogKind = CoreWebView2PrintDialogKind.Browser;
-                _nativeICoreWebView2_16.ShowPrintUI((COREWEBVIEW2_PRINT_DIALOG_KIND)printDialogKind);
+                _nativeICoreWebView2_16.ShowPrintUI(
+                    (COREWEBVIEW2_PRINT_DIALOG_KIND)printDialogKind
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -4785,19 +5698,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -4822,19 +5741,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -4875,19 +5800,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
 
             await handler;
@@ -4913,19 +5844,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -4964,19 +5901,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
 
             await handler;
@@ -5005,31 +5948,44 @@ namespace Microsoft.Web.WebView2.Core
         //     Microsoft.Web.WebView2.Core.CoreWebView2.ContentLoading event has been fired
         //     for it. Any call to this method prior to that will result in a capture of the
         //     page being navigated away from.
-        public async Task CapturePreviewAsync(CoreWebView2CapturePreviewImageFormat imageFormat, Stream imageStream)
+        public async Task CapturePreviewAsync(
+            CoreWebView2CapturePreviewImageFormat imageFormat,
+            Stream imageStream
+        )
         {
             CoreWebView2CapturePreviewCompletedHandler handler;
             try
             {
                 handler = new CoreWebView2CapturePreviewCompletedHandler();
-                _nativeICoreWebView2.CapturePreview((COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT)imageFormat, (imageStream == null) ? null : new ManagedIStream(imageStream), handler);
+                _nativeICoreWebView2.CapturePreview(
+                    (COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT)imageFormat,
+                    (imageStream == null) ? null : new ManagedIStream(imageStream),
+                    handler
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
 
             await handler;
@@ -5054,19 +6010,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5097,19 +6059,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5137,19 +6105,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5175,31 +6149,44 @@ namespace Microsoft.Web.WebView2.Core
         //     in the order called, CDP method calls may be processed out of order. If you require
         //     CDP methods to run in a particular order, you should await for the previous method
         //     call.
-        public async Task<string> CallDevToolsProtocolMethodAsync(string methodName, string parametersAsJson)
+        public async Task<string> CallDevToolsProtocolMethodAsync(
+            string methodName,
+            string parametersAsJson
+        )
         {
             CoreWebView2CallDevToolsProtocolMethodCompletedHandler handler;
             try
             {
                 handler = new CoreWebView2CallDevToolsProtocolMethodCompletedHandler();
-                _nativeICoreWebView2.CallDevToolsProtocolMethod(methodName, parametersAsJson, handler);
+                _nativeICoreWebView2.CallDevToolsProtocolMethod(
+                    methodName,
+                    parametersAsJson,
+                    handler
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
 
             await handler;
@@ -5220,19 +6207,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5249,19 +6242,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5280,29 +6279,39 @@ namespace Microsoft.Web.WebView2.Core
         // Remarks:
         //     For more information about DevToolsProtocol events description and event args,
         //     navigate to [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs).
-        public CoreWebView2DevToolsProtocolEventReceiver GetDevToolsProtocolEventReceiver(string eventName)
+        public CoreWebView2DevToolsProtocolEventReceiver GetDevToolsProtocolEventReceiver(
+            string eventName
+        )
         {
             try
             {
-                return new CoreWebView2DevToolsProtocolEventReceiver(_nativeICoreWebView2.GetDevToolsProtocolEventReceiver(eventName));
+                return new CoreWebView2DevToolsProtocolEventReceiver(
+                    _nativeICoreWebView2.GetDevToolsProtocolEventReceiver(eventName)
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5322,19 +6331,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5474,19 +6489,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5513,19 +6534,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5545,19 +6572,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5610,29 +6643,41 @@ namespace Microsoft.Web.WebView2.Core
         //     to punycode before wildcard comparison
         //     https://❤.example/ https://xn--qei.example/ No Non-ASCII hostnames are normalized
         //     to punycode before wildcard comparison
-        public void AddWebResourceRequestedFilter(string uri, CoreWebView2WebResourceContext ResourceContext)
+        public void AddWebResourceRequestedFilter(
+            string uri,
+            CoreWebView2WebResourceContext ResourceContext
+        )
         {
             try
             {
-                _nativeICoreWebView2.AddWebResourceRequestedFilter(uri, (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext);
+                _nativeICoreWebView2.AddWebResourceRequestedFilter(
+                    uri,
+                    (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5655,33 +6700,47 @@ namespace Microsoft.Web.WebView2.Core
         // Remarks:
         //     If the same filter was added multiple times, then it must need to be removed
         //     as many times as it was added for the removal to be effective.
-        public void RemoveWebResourceRequestedFilter(string uri, CoreWebView2WebResourceContext ResourceContext)
+        public void RemoveWebResourceRequestedFilter(
+            string uri,
+            CoreWebView2WebResourceContext ResourceContext
+        )
         {
             try
             {
-                _nativeICoreWebView2.RemoveWebResourceRequestedFilter(uri, (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext);
+                _nativeICoreWebView2.RemoveWebResourceRequestedFilter(
+                    uri,
+                    (COREWEBVIEW2_WEB_RESOURCE_CONTEXT)ResourceContext
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
-        internal void OnWebResourceResponseReceived(CoreWebView2WebResourceResponseReceivedEventArgs args)
+        internal void OnWebResourceResponseReceived(
+            CoreWebView2WebResourceResponseReceivedEventArgs args
+        )
         {
             webResourceResponseReceived?.Invoke(this, args);
         }
@@ -5710,25 +6769,33 @@ namespace Microsoft.Web.WebView2.Core
         {
             try
             {
-                _nativeICoreWebView2_2.NavigateWithWebResourceRequest(Request._nativeICoreWebView2WebResourceRequest);
+                _nativeICoreWebView2_2.NavigateWithWebResourceRequest(
+                    Request._nativeICoreWebView2WebResourceRequest
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5772,19 +6839,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
 
             await handler;
@@ -5810,19 +6883,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5887,29 +6966,43 @@ namespace Microsoft.Web.WebView2.Core
         //     host names even if the machine has a DNS suffix of example.com.
         //     Specify the minimal cross-origin access necessary to run the app. If there is
         //     not a need to access local resources from other origins, use Microsoft.Web.WebView2.Core.CoreWebView2HostResourceAccessKind.Deny.
-        public void SetVirtualHostNameToFolderMapping(string hostName, string folderPath, CoreWebView2HostResourceAccessKind accessKind)
+        public void SetVirtualHostNameToFolderMapping(
+            string hostName,
+            string folderPath,
+            CoreWebView2HostResourceAccessKind accessKind
+        )
         {
             try
             {
-                _nativeICoreWebView2_3.SetVirtualHostNameToFolderMapping(hostName, folderPath, (COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND)accessKind);
+                _nativeICoreWebView2_3.SetVirtualHostNameToFolderMapping(
+                    hostName,
+                    folderPath,
+                    (COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND)accessKind
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5930,19 +7023,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
 
@@ -5956,7 +7055,9 @@ namespace Microsoft.Web.WebView2.Core
             downloadStarting?.Invoke(this, args);
         }
 
-        internal void OnClientCertificateRequested(CoreWebView2ClientCertificateRequestedEventArgs args)
+        internal void OnClientCertificateRequested(
+            CoreWebView2ClientCertificateRequestedEventArgs args
+        )
         {
             clientCertificateRequested?.Invoke(this, args);
         }
@@ -5987,19 +7088,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
         }
 
@@ -6045,19 +7152,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
         }
 
@@ -6085,23 +7198,31 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
         }
 
-        internal void OnBasicAuthenticationRequested(CoreWebView2BasicAuthenticationRequestedEventArgs args)
+        internal void OnBasicAuthenticationRequested(
+            CoreWebView2BasicAuthenticationRequestedEventArgs args
+        )
         {
             basicAuthenticationRequested?.Invoke(this, args);
         }
@@ -6144,7 +7265,11 @@ namespace Microsoft.Web.WebView2.Core
         //     about available methods, navigate to [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs).
         //     The handler's Invoke method will be called when the method asynchronously completes.
         //     Invoke will be called with the method's return object as a JSON string.
-        public async Task<string> CallDevToolsProtocolMethodForSessionAsync(string sessionId, string methodName, string parametersAsJson)
+        public async Task<string> CallDevToolsProtocolMethodForSessionAsync(
+            string sessionId,
+            string methodName,
+            string parametersAsJson
+        )
         {
             CoreWebView2CallDevToolsProtocolMethodCompletedHandler handler;
             try
@@ -6152,31 +7277,47 @@ namespace Microsoft.Web.WebView2.Core
                 try
                 {
                     handler = new CoreWebView2CallDevToolsProtocolMethodCompletedHandler();
-                    _nativeICoreWebView2_11.CallDevToolsProtocolMethodForSession(sessionId, methodName, parametersAsJson, handler);
+                    _nativeICoreWebView2_11.CallDevToolsProtocolMethodForSession(
+                        sessionId,
+                        methodName,
+                        parametersAsJson,
+                        handler
+                    );
                 }
                 catch (NotImplementedException)
                 {
                     handler = new CoreWebView2CallDevToolsProtocolMethodCompletedHandler();
-                    _nativeICoreWebView2Experimental14.CallDevToolsProtocolMethodForSession(sessionId, methodName, parametersAsJson, handler);
+                    _nativeICoreWebView2Experimental14.CallDevToolsProtocolMethodForSession(
+                        sessionId,
+                        methodName,
+                        parametersAsJson,
+                        handler
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
 
             await handler;
@@ -6189,7 +7330,9 @@ namespace Microsoft.Web.WebView2.Core
             statusBarTextChanged?.Invoke(this, args);
         }
 
-        internal void OnServerCertificateErrorDetected(CoreWebView2ServerCertificateErrorDetectedEventArgs args)
+        internal void OnServerCertificateErrorDetected(
+            CoreWebView2ServerCertificateErrorDetectedEventArgs args
+        )
         {
             serverCertificateErrorDetected?.Invoke(this, args);
         }
@@ -6218,19 +7361,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
 
             await handler;
@@ -6261,31 +7410,43 @@ namespace Microsoft.Web.WebView2.Core
                 try
                 {
                     handler = new CoreWebView2GetFaviconCompletedHandler();
-                    _nativeICoreWebView2_15.GetFavicon((COREWEBVIEW2_FAVICON_IMAGE_FORMAT)format, handler);
+                    _nativeICoreWebView2_15.GetFavicon(
+                        (COREWEBVIEW2_FAVICON_IMAGE_FORMAT)format,
+                        handler
+                    );
                 }
                 catch (NotImplementedException)
                 {
                     handler = new CoreWebView2GetFaviconCompletedHandler();
-                    _nativeICoreWebView2Experimental12.GetFavicon((COREWEBVIEW2_FAVICON_IMAGE_FORMAT)format, handler);
+                    _nativeICoreWebView2Experimental12.GetFavicon(
+                        (COREWEBVIEW2_FAVICON_IMAGE_FORMAT)format,
+                        handler
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
 
             await handler;
@@ -6324,7 +7485,9 @@ namespace Microsoft.Web.WebView2.Core
         //     If the caller provides invalid settings for the specified printer.
         //     Exception Microsoft.Web.WebView2.Core.CoreWebView2PrintStatus.OtherError Print
         //     operation is failed as printing job already in progress.
-        public async Task<CoreWebView2PrintStatus> PrintAsync(CoreWebView2PrintSettings printSettings)
+        public async Task<CoreWebView2PrintStatus> PrintAsync(
+            CoreWebView2PrintSettings printSettings
+        )
         {
             CoreWebView2PrintCompletedHandler handler;
             try
@@ -6332,31 +7495,43 @@ namespace Microsoft.Web.WebView2.Core
                 try
                 {
                     handler = new CoreWebView2PrintCompletedHandler();
-                    _nativeICoreWebView2_16.Print(printSettings._nativeICoreWebView2PrintSettings, handler);
+                    _nativeICoreWebView2_16.Print(
+                        printSettings._nativeICoreWebView2PrintSettings,
+                        handler
+                    );
                 }
                 catch (NotImplementedException)
                 {
                     handler = new CoreWebView2PrintCompletedHandler();
-                    _nativeICoreWebView2Experimental17.Print(printSettings._nativeICoreWebView2PrintSettings, handler);
+                    _nativeICoreWebView2Experimental17.Print(
+                        printSettings._nativeICoreWebView2PrintSettings,
+                        handler
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
 
             await handler;
@@ -6378,30 +7553,40 @@ namespace Microsoft.Web.WebView2.Core
             {
                 try
                 {
-                    _nativeICoreWebView2_16.ShowPrintUI((COREWEBVIEW2_PRINT_DIALOG_KIND)printDialogKind);
+                    _nativeICoreWebView2_16.ShowPrintUI(
+                        (COREWEBVIEW2_PRINT_DIALOG_KIND)printDialogKind
+                    );
                 }
                 catch (NotImplementedException)
                 {
-                    _nativeICoreWebView2Experimental17.ShowPrintUI((COREWEBVIEW2_PRINT_DIALOG_KIND)printDialogKind);
+                    _nativeICoreWebView2Experimental17.ShowPrintUI(
+                        (COREWEBVIEW2_PRINT_DIALOG_KIND)printDialogKind
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
         }
 
@@ -6428,31 +7613,43 @@ namespace Microsoft.Web.WebView2.Core
                 try
                 {
                     handler = new CoreWebView2PrintToPdfStreamCompletedHandler();
-                    _nativeICoreWebView2_16.PrintToPdfStream(printSettings._nativeICoreWebView2PrintSettings, handler);
+                    _nativeICoreWebView2_16.PrintToPdfStream(
+                        printSettings._nativeICoreWebView2PrintSettings,
+                        handler
+                    );
                 }
                 catch (NotImplementedException)
                 {
                     handler = new CoreWebView2PrintToPdfStreamCompletedHandler();
-                    _nativeICoreWebView2Experimental17.PrintToPdfStream(printSettings._nativeICoreWebView2PrintSettings, handler);
+                    _nativeICoreWebView2Experimental17.PrintToPdfStream(
+                        printSettings._nativeICoreWebView2PrintSettings,
+                        handler
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
 
             await handler;
@@ -6505,40 +7702,60 @@ namespace Microsoft.Web.WebView2.Core
         //     by the script and the script modifies it in an unexpected way, it could result
         //     in corrupted data that might even crash the application. The example code shows
         //     how to send data to script for one time read only consumption.
-        public void PostSharedBufferToScript(CoreWebView2SharedBuffer sharedBuffer, CoreWebView2SharedBufferAccess access, string additionalDataAsJson)
+        public void PostSharedBufferToScript(
+            CoreWebView2SharedBuffer sharedBuffer,
+            CoreWebView2SharedBufferAccess access,
+            string additionalDataAsJson
+        )
         {
             try
             {
                 try
                 {
-                    _nativeICoreWebView2_17.PostSharedBufferToScript(sharedBuffer._nativeICoreWebView2SharedBuffer, (COREWEBVIEW2_SHARED_BUFFER_ACCESS)access, additionalDataAsJson);
+                    _nativeICoreWebView2_17.PostSharedBufferToScript(
+                        sharedBuffer._nativeICoreWebView2SharedBuffer,
+                        (COREWEBVIEW2_SHARED_BUFFER_ACCESS)access,
+                        additionalDataAsJson
+                    );
                 }
                 catch (NotImplementedException)
                 {
-                    _nativeICoreWebView2Experimental18.PostSharedBufferToScript(sharedBuffer._nativeICoreWebView2SharedBuffer, (COREWEBVIEW2_SHARED_BUFFER_ACCESS)access, additionalDataAsJson);
+                    _nativeICoreWebView2Experimental18.PostSharedBufferToScript(
+                        sharedBuffer._nativeICoreWebView2SharedBuffer,
+                        (COREWEBVIEW2_SHARED_BUFFER_ACCESS)access,
+                        additionalDataAsJson
+                    );
                 }
             }
             catch (InvalidCastException ex2)
             {
                 if (ex2.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
             catch (COMException ex3)
             {
                 if (ex3.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex3);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex3
+                    );
                 }
 
-                throw ex3;
+                throw;
             }
         }
 
-        internal void OnLaunchingExternalUriScheme(CoreWebView2LaunchingExternalUriSchemeEventArgs args)
+        internal void OnLaunchingExternalUriScheme(
+            CoreWebView2LaunchingExternalUriSchemeEventArgs args
+        )
         {
             launchingExternalUriScheme?.Invoke(this, args);
         }
@@ -6550,7 +7767,9 @@ namespace Microsoft.Web.WebView2.Core
         //     in the Microsoft.Web.WebView2.Core.CoreWebView2ExecuteScriptResult object which
         //     has methods and properties to obtain the successful result of script execution
         //     as well as any unhandled JavaScript exceptions.
-        public async Task<CoreWebView2ExecuteScriptResult> ExecuteScriptWithResultAsync(string javaScript)
+        public async Task<CoreWebView2ExecuteScriptResult> ExecuteScriptWithResultAsync(
+            string javaScript
+        )
         {
             CoreWebView2ExecuteScriptWithResultCompletedHandler handler;
             try
@@ -6562,19 +7781,25 @@ namespace Microsoft.Web.WebView2.Core
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
 
             await handler;
@@ -6586,25 +7811,33 @@ namespace Microsoft.Web.WebView2.Core
         {
             try
             {
-                _nativeICoreWebView2PrivatePartial.AddHostObjectHelper(helper._nativeICoreWebView2PrivateHostObjectHelper);
+                _nativeICoreWebView2PrivatePartial.AddHostObjectHelper(
+                    helper._nativeICoreWebView2PrivateHostObjectHelper
+                );
             }
             catch (InvalidCastException ex)
             {
                 if (ex.HResult == -2147467262)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members can only be accessed from the UI thread.",
+                        ex
+                    );
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
                 if (ex2.HResult == -2147019873)
                 {
-                    throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
+                    throw new InvalidOperationException(
+                        "CoreWebView2 members cannot be accessed after the WebView2 control is disposed.",
+                        ex2
+                    );
                 }
 
-                throw ex2;
+                throw;
             }
         }
     }

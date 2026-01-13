@@ -9,6 +9,8 @@
     <!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>-->
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);CopyTargetsForTfmSpecificContentInPackage</TargetsForTfmSpecificContentInPackage>
     <!--<TargetsForTfmSpecificDebugSymbolsInPackage>$(TargetsForTfmSpecificDebugSymbolsInPackage);CopyProjectReferencesSymbolsToPackage</TargetsForTfmSpecificDebugSymbolsInPackage>-->
+    <!-- Suppress NU5118: Files from Binary directory are automatically included by NuGet, explicit inclusion is redundant but harmless -->
+    <NoWarn>$(NoWarn);NU5118</NoWarn>
   </PropertyGroup>
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
     <ItemGroup>
@@ -19,7 +21,7 @@
   </Target>
   <Target Name="CopyTargetsForTfmSpecificContentInPackage">
     <ItemGroup>
-      <TfmSpecificPackageFile Include="$(OutputPath)runtimes/**">
+      <TfmSpecificPackageFile Include="$(OutputPath)runtimes/**" Exclude="**/Binary/**">
         <TargetFramework>$(TargetFramework)</TargetFramework>
         <PackagePath>lib/$(TargetFramework)/runtimes/;runtimes</PackagePath>
       </TfmSpecificPackageFile>
@@ -38,6 +40,8 @@
 			<TfmSpecificPackageFile Include="$(OutputPath)WebView.Core.dll">
 				<TargetFramework>$(TargetFramework)</TargetFramework>
 				<PackagePath>lib/$(TargetFramework)/</PackagePath>
+
+
 
 			</TfmSpecificPackageFile>-->
     </ItemGroup>
@@ -74,8 +78,6 @@
   <ItemGroup>
     <PackageReference Include="Avalonia" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" />
-    <PackageReference Include="Microsoft.CSharp" />
-    <PackageReference Include="System.Numerics.Vectors" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
   </ItemGroup>
   <ItemGroup>

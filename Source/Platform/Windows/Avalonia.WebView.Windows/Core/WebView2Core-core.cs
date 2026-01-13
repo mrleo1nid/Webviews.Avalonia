@@ -53,7 +53,6 @@ partial class WebView2Core
         if (!provider.ResourceRequestedFilterProvider(this, out var filter))
             return Task.CompletedTask;
 
-        _isBlazorWebView = true;
         var filterString = $"{filter.BaseUri.AbsoluteUri}*";
         coreWebView2.AddWebResourceRequestedFilter(
             filterString,
@@ -64,10 +63,7 @@ partial class WebView2Core
         );
     }
 
-    void ClearBlazorWebViewCompleted(CoreWebView2 coreWebView2)
-    {
-        _isBlazorWebView = false;
-    }
+    void ClearBlazorWebViewCompleted(CoreWebView2 coreWebView2) { }
 
     private async void CoreWebView2_WebResourceRequested(
         object? sender,
@@ -170,10 +166,10 @@ partial class WebView2Core
         CoreWebView2SourceChangedEventArgs e
     ) { }
 
-    private void CoreWebView2_ProcessFailed(
-        object? sender,
-        CoreWebView2ProcessFailedEventArgs e
-    ) { }
+    private void CoreWebView2_ProcessFailed(object? sender, CoreWebView2ProcessFailedEventArgs e)
+    {
+        _browserCrashed = true;
+    }
 
     private void CoreWebView2_NavigationStarting(
         object? sender,

@@ -1,8 +1,13 @@
-﻿namespace Avalonia.WebView.Windows.Core;
+namespace Avalonia.WebView.Windows.Core;
 
 public partial class WebView2Core : IPlatformWebView<WebView2Core>
 {
-    public WebView2Core(ViewHandler handler, IVirtualWebViewControlCallBack callback, IVirtualBlazorWebViewProvider? provider, WebViewCreationProperties webViewCreationProperties)
+    public WebView2Core(
+        ViewHandler handler,
+        IVirtualWebViewControlCallBack callback,
+        IVirtualBlazorWebViewProvider? provider,
+        WebViewCreationProperties webViewCreationProperties
+    )
     {
         _hwndTaskSource = new();
         _callBack = callback;
@@ -34,8 +39,6 @@ public partial class WebView2Core : IPlatformWebView<WebView2Core>
     bool _browserHitTransparent;
     bool _browserCrashed;
 
-    bool _isBlazorWebView = false;
-
     bool _isInitialized = false;
     public bool IsInitialized
     {
@@ -49,7 +52,7 @@ public partial class WebView2Core : IPlatformWebView<WebView2Core>
         get => Volatile.Read(ref _isDisposed);
         private set => Volatile.Write(ref _isDisposed, value);
     }
- 
+
     CoreWebView2Environment? _coreWebView2Environment { get; set; }
     CoreWebView2Controller? _coreWebView2Controller { get; set; }
     CoreWebView2ControllerOptions? _controllerOptions { get; set; }

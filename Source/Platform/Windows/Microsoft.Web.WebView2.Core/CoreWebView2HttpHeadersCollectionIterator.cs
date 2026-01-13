@@ -1,4 +1,4 @@
-﻿#region Assembly Microsoft.Web.WebView2.Core, Version=1.0.1829.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e
+#region Assembly Microsoft.Web.WebView2.Core, Version=1.0.1829.0, Culture=neutral, PublicKeyToken=2a8ab48044d2601e
 // C:\Users\ChisterWu\.nuget\packages\microsoft.web.webview2\1.0.1829-prerelease\lib\netcoreapp3.0\Microsoft.Web.WebView2.Core.dll
 // Decompiled with ICSharpCode.Decompiler 7.1.0.6543
 #endregion
@@ -94,7 +94,7 @@ namespace Microsoft.Web.WebView2.Core
                         throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
                     }
 
-                    throw ex;
+                    throw;
                 }
                 catch (COMException ex2)
                 {
@@ -103,7 +103,7 @@ namespace Microsoft.Web.WebView2.Core
                         throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
                     }
 
-                    throw ex2;
+                    throw;
                 }
             }
         }
@@ -153,7 +153,7 @@ namespace Microsoft.Web.WebView2.Core
                     throw new InvalidOperationException("CoreWebView2 members can only be accessed from the UI thread.", ex);
                 }
 
-                throw ex;
+                throw;
             }
             catch (COMException ex2)
             {
@@ -162,7 +162,7 @@ namespace Microsoft.Web.WebView2.Core
                     throw new InvalidOperationException("CoreWebView2 members cannot be accessed after the WebView2 control is disposed.", ex2);
                 }
 
-                throw ex2;
+                throw;
             }
         }
     }

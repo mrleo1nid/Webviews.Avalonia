@@ -1,4 +1,4 @@
-﻿<Project>
+<Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <AvaloniaVersion>11.0.0</AvaloniaVersion>
@@ -66,6 +66,9 @@
   <ItemGroup>
     <PackageVersion Include="PolySharp" Version="1.13.2" />
     <PackageVersion Include="MonoMac.NetStandard" Version="0.0.4" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0' OR '$(TargetFramework)' == 'net10.0-windows'">
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView" Version="10.0.0" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0' OR '$(TargetFramework)' == 'net7.0-windows'">
     <PackageVersion Include="Microsoft.AspNetCore.Components.WebView" Version="7.0.9" />

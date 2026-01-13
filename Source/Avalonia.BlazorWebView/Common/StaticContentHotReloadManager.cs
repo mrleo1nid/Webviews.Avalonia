@@ -1,4 +1,6 @@
-﻿namespace AvaloniaBlazorWebView.Common;
+﻿using Microsoft.AspNetCore.Components;
+
+namespace AvaloniaBlazorWebView.Common;
 internal static class StaticContentHotReloadManager
 {
     private delegate void ContentUpdatedHandler(string assemblyName, string relativePath);

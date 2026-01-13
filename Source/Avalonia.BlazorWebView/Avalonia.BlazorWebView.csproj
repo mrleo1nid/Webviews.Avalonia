@@ -8,7 +8,14 @@
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebView">
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView" VersionOverride="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView" VersionOverride="10.0.1">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>

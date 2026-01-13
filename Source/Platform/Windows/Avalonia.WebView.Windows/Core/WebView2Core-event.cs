@@ -6,14 +6,14 @@ partial class WebView2Core
 {
     void RegisterEvents()
     {
-        _handler.SizeChanged += HostControl_SizeChanged;
-        _handler.PlatformHandlerChanged += Handler_PlatformHandlerChanged;
+        _handler.SizeChanged += HostControl_SizeChanged!;
+        _handler.PlatformHandlerChanged += Handler_PlatformHandlerChanged!;
     }
 
     void UnregisterEvents()
     {
-        _handler.SizeChanged -= HostControl_SizeChanged;
-        _handler.PlatformHandlerChanged -= Handler_PlatformHandlerChanged;
+        _handler.SizeChanged -= HostControl_SizeChanged!;
+        _handler.PlatformHandlerChanged -= Handler_PlatformHandlerChanged!;
     }
 
     void RegisterWebViewEvents(CoreWebView2Controller coreWebView2Controller)
@@ -22,11 +22,12 @@ partial class WebView2Core
             return;
 
         if (!_browserHitTransparent)
-            coreWebView2Controller.AcceleratorKeyPressed += CoreWebView2Controller_AcceleratorKeyPressed; ;
+            coreWebView2Controller.AcceleratorKeyPressed +=
+                CoreWebView2Controller_AcceleratorKeyPressed!;
 
-        coreWebView2Controller.GotFocus += CoreWebView2Controller_GotFocus;
-        coreWebView2Controller.LostFocus += CoreWebView2Controller_LostFocus;
-        coreWebView2Controller.MoveFocusRequested += CoreWebView2Controller_MoveFocusRequested;
+        coreWebView2Controller.GotFocus += CoreWebView2Controller_GotFocus!;
+        coreWebView2Controller.LostFocus += CoreWebView2Controller_LostFocus!;
+        coreWebView2Controller.MoveFocusRequested += CoreWebView2Controller_MoveFocusRequested!;
         coreWebView2Controller.ZoomFactorChanged += CoreWebView2Controller_ZoomFactorChanged;
 
         var corewebview2 = coreWebView2Controller.CoreWebView2;
@@ -46,7 +47,10 @@ partial class WebView2Core
         corewebview2.Profile.Deleted += Profile_Deleted;
     }
 
-    void UnregisterWebViewEvents(CoreWebView2Controller coreWebView2Controller, bool browserCrashed = false)
+    void UnregisterWebViewEvents(
+        CoreWebView2Controller coreWebView2Controller,
+        bool browserCrashed = false
+    )
     {
         if (coreWebView2Controller is null)
             return;
@@ -54,11 +58,12 @@ partial class WebView2Core
         var corewebview2 = coreWebView2Controller.CoreWebView2;
 
         if (!_browserHitTransparent)
-            coreWebView2Controller.AcceleratorKeyPressed -= CoreWebView2Controller_AcceleratorKeyPressed; ;
+            coreWebView2Controller.AcceleratorKeyPressed -=
+                CoreWebView2Controller_AcceleratorKeyPressed!;
 
-        coreWebView2Controller.GotFocus -= CoreWebView2Controller_GotFocus;
-        coreWebView2Controller.LostFocus -= CoreWebView2Controller_LostFocus;
-        coreWebView2Controller.MoveFocusRequested -= CoreWebView2Controller_MoveFocusRequested;
+        coreWebView2Controller.GotFocus -= CoreWebView2Controller_GotFocus!;
+        coreWebView2Controller.LostFocus -= CoreWebView2Controller_LostFocus!;
+        coreWebView2Controller.MoveFocusRequested -= CoreWebView2Controller_MoveFocusRequested!;
         coreWebView2Controller.ZoomFactorChanged -= CoreWebView2Controller_ZoomFactorChanged;
         coreWebView2Controller.Close();
 
@@ -88,7 +93,12 @@ partial class WebView2Core
         if (topLevel is not null)
             scale = topLevel.RenderScaling;
 
-        _coreWebView2Controller.Bounds = new Rectangle(0, 0, Convert.ToInt32(e.NewSize.Width * scale), Convert.ToInt32(e.NewSize.Height * scale));
+        _coreWebView2Controller.Bounds = new Rectangle(
+            0,
+            0,
+            Convert.ToInt32(e.NewSize.Width * scale),
+            Convert.ToInt32(e.NewSize.Height * scale)
+        );
         _coreWebView2Controller.NotifyParentWindowPositionChanged();
     }
 
@@ -100,6 +110,5 @@ partial class WebView2Core
             _hwndTaskSource.SetResult(_handler.RefHandler.Handle);
         }
     }
-
-
 }
+

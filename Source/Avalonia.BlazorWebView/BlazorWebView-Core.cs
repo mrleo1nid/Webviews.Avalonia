@@ -46,23 +46,44 @@ partial class BlazorWebView
         //if (_setting.IsAvaloniaResource)
         //    fileProvider = new AvaloniaResourceFileProvider(_setting.ResourceAssembly!, contentRootDir);
         //else
-        var fileProvider = _platformBlazorWebViewProvider.CreateFileProvider(_setting.ResourceAssembly, contentRootDirFullPath);
-        var webViewManager = new AvaloniaWebViewManager(this, _serviceProvider, _dispatcher, _appScheme, _appHostAddress, _baseUri, fileProvider, _jsComponents, contentRootDirFullPath, hostPageRelativePath);
+        var fileProvider = _platformBlazorWebViewProvider.CreateFileProvider(
+            _setting.ResourceAssembly,
+            contentRootDirFullPath
+        );
+        var webViewManager = new AvaloniaWebViewManager(
+            this,
+            _serviceProvider,
+            _dispatcher,
+            _appScheme,
+            _appHostAddress,
+            _baseUri,
+            fileProvider,
+            _jsComponents,
+            contentRootDirFullPath,
+            hostPageRelativePath
+        );
         //StaticContentHotReloadManager.AttachToWebViewManagerIfEnabled(webviewManager);
 
-        var viewHandler = _viewHandlerProvider.CreatePlatformWebViewHandler(this, this, webViewManager, config =>
-        {
-            config.AreDevToolEnabled = _creationProperties.AreDevToolEnabled;
-            config.AreDefaultContextMenusEnabled = _creationProperties.AreDefaultContextMenusEnabled;
-            config.IsStatusBarEnabled = _creationProperties.IsStatusBarEnabled;
-            config.BrowserExecutableFolder = _creationProperties.BrowserExecutableFolder;
-            config.UserDataFolder = _creationProperties.UserDataFolder;
-            config.Language = _creationProperties.Language;
-            config.AdditionalBrowserArguments = _creationProperties.AdditionalBrowserArguments;
-            config.ProfileName = _creationProperties.ProfileName;
-            config.IsInPrivateModeEnabled = _creationProperties.IsInPrivateModeEnabled;
-            config.DefaultWebViewBackgroundColor = _creationProperties.DefaultWebViewBackgroundColor;
-        });
+        var viewHandler = _viewHandlerProvider.CreatePlatformWebViewHandler(
+            this,
+            this,
+            webViewManager,
+            config =>
+            {
+                config.AreDevToolEnabled = _creationProperties.AreDevToolEnabled;
+                config.AreDefaultContextMenusEnabled =
+                    _creationProperties.AreDefaultContextMenusEnabled;
+                config.IsStatusBarEnabled = _creationProperties.IsStatusBarEnabled;
+                config.BrowserExecutableFolder = _creationProperties.BrowserExecutableFolder;
+                config.UserDataFolder = _creationProperties.UserDataFolder;
+                config.Language = _creationProperties.Language;
+                config.AdditionalBrowserArguments = _creationProperties.AdditionalBrowserArguments;
+                config.ProfileName = _creationProperties.ProfileName;
+                config.IsInPrivateModeEnabled = _creationProperties.IsInPrivateModeEnabled;
+                config.DefaultWebViewBackgroundColor =
+                    _creationProperties.DefaultWebViewBackgroundColor;
+            }
+        );
 
         if (viewHandler is null)
             throw new ArgumentNullException(nameof(viewHandler));
